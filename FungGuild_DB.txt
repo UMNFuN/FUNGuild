@@ -1,4 +1,4 @@
-Taxon	Taxon Level	Function	Type	Likelihood	Notes	Citation/Source
+Taxon Taxon_Level Trophic_Category  Guild Confidence_Ranking  Notes Citation/Source
 Abrothallus	7	Parasite	Lichenicolous fungus	Possible	NA	Esslinger TL. 2014. North Dakota State University: http://www.ndsu.edu/pubweb/~esslinge/chcklst/chcklst7.htm
 Abrothallus parmeliarum	8	Parasite	Lichenicolous fungus	Possible	NA	Esslinger TL. 2014. North Dakota State University: http://www.ndsu.edu/pubweb/~esslinge/chcklst/chcklst7.htm
 Acaroconium puntiforme	8	Parasite	Lichenicolous fungus	Possible	NA	Esslinger TL. 2014. North Dakota State University: http://www.ndsu.edu/pubweb/~esslinge/chcklst/chcklst7.htm
