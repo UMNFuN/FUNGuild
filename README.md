@@ -2,7 +2,7 @@ GENERAL NOTES
 
 The FUNGuild bioinformatic tool is based on an original in-house python script referenced in Branco et al. 2013. PLoS One 8: 1–10. (http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078295).
 
-A current version of Python (https://www.python.org/) must be installed on the user’s local machine, before the FUNGuild script (https://github.com/UMNFuN/FUNGuild/blob/master/FUNGuild.py) can be used. The FUNGuild database is accessed by the python script remotely and, therefore, does not need to be loaded to the user’s local machine; however, the script must be able to access the internet to connect with the database.
+A current version of Python (https://www.python.org/) must be installed on the user’s local machine, before the FUNGuild script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/FUNGuild.py) can be used. The FUNGuild database is accessed by the python script remotely and, therefore, does not need to be loaded to the user’s local machine; however, the script must be able to access the internet to connect with the database.
 
 An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/OTU_table_example.csv) to demonstrate table formatting.
 
@@ -10,7 +10,7 @@ An example OTU table has been provided in the FUNGuild GitHub repository (https:
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
-Guild data for a particular fungal taxon should be entered into each of seven fields in the FUNGuild database (a tab delimited text flat file) hosted in a GitHub repository (https://github.com/UMNFuN/FUNGuild/FUNGuild_DB.txt). Data can be contributed to the FUNGuild database in two manners: 1) indirectly by contacting the db curator (Nhu Nguyen: xerantheum@gmail.com); 2) directly by editing the FUNGuild database file in the GitHub repository and creating a pull request (see instructions below).
+Guild data for a particular fungal taxon should be entered into each of seven fields in the FUNGuild database (a tab delimited text flat file) hosted in a GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/FUNGuild_DB.txt). Data can be contributed to the FUNGuild database in two manners: 1) indirectly by contacting the db curator (Nhu Nguyen: xerantheum@gmail.com); 2) directly by editing the FUNGuild database file in the GitHub repository and creating a pull request (see instructions below).
 
 Information should be entered into each FUNGuild database field, in sequence, as follows:
 
