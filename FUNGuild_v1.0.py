@@ -88,7 +88,7 @@ else:
 ###########################################################################################
 
 # Import Function Database from GitHub, and get it ready.##################################
-print "FunGuild v1.0 Beta"
+print "FUNGuild v1.0 Beta"
 print "Downloading database from Github ..."
 
 function_file = 'temp_db.txt' #temp file to store database file
