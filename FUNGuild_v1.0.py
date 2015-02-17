@@ -1,45 +1,47 @@
 # -*- coding: utf-8 -*-
 '''
-This script assigns functional information to the OTUs in the user's OTU table. The OTU table need to have a column names 'taxonomy', containing information from a reference database (such as UNITE). It is required that the first line of the OTU table to be the header, without any additional comments. Some program, such as single_rarefaction.py in Qiime will add an additioal comment before the header, this has to be removed before using the FunGuild script. The script will try to recognized the delimiter in the user's OTU table, but comma (.csv) or tab delimiter format are recommended.
+This script assigns functional information to the OTUs in the user's OTU table. The OTU table needs to have a column names 'taxonomy', containing information from a reference database (such as UNITE). It is required that the first line of the OTU table to be the header, without any additional comments. Some program, such as single_rarefaction.py in Qiime will add an additioal comment before the header, this has to be removed before using the FUNGuild script. The script will try to recognized the delimiter in the user's OTU table, but comma (.csv) or tab delimiter format are recommended.
 
-The functional database is fetched from Github (https://raw.githubusercontent.com/xerantheum/fungal_function/master/fungal_guild_table.txt)
+The FUNGuild database is fetched from Github (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/FUNGuild_DB.txt)
 
-Script usage: FunGuild.py [-h] [-otu OTU_file] [-m] [-u]
+Script usage: FUNGuild.py [-h] [-otu OTU_file] [-a] [-u]
 
 optional arguments:
-  -h, --help       show this help message and exit
+  -h, --help       Show this help message and exit
   -otu OTU         Path and file name of the OTU table. The script will try to
                    detect the delimiters in the file, but tab or csv are
-                   preferred formats.
-  -m, --matched    Ask the script to output a otu table with function assigned
+                   preferred formats. Be sure that the first line of the OTU table is not 		
+                   blocked out with a #
+  -a, --assigned   Ask the script to output a otu table with function assigned
                    OTUs
-  -u, --unmatched  Ask the script to output a otu table with unassigned OTUs
+  -u, --unassigned Ask the script to output a otu table with unassigned OTUs
   
 This is an example command to run this script:
-python FunGuild.py -otu user_otu_table.txt
+python FUNGuild.py -otu user_otu_table.txt
 
-The script will have one output file with suffix on the input file: user_otu_table.function.txt
+The script will have one output file with suffix on the input file: user_otu_table_function.txt
 
-By using -m and -u, the script will produce two additional files:
--m will output a file contains only the OTUs that has been assigned a function: user_otu_table.matched.txt
--u will output a file contains only the OTUs that do not have match in the database: user_otu_table.unmatched.txt
+By using -a and -u, the script will produce two additional files:
+-a will output a file contains only the OTUs that has been assigned a function: user_otu_table_assigned.txt
+-u will output a file contains only the OTUs that do not have match in the database: user_otu_table_unassigned.txt
 
-All existed files will be overwrote without notice.
+All existed files will be overwritten without notice.
 
 All output OTU tables are sorted by the sum sequence number of each OTU.
 
 ###################################################################################
 Development history:
 
-The idea of parsing OTUs into functions originated from an python script by Sara Branco that separates EM, potentially EM and non-EM OTUs (Branco et al. 2013. PLoS One 8: 1–10).
+The idea of parsing OTUs into functions using an index database originated from an python script by Sara Branco that separates ectomycorrhizas, potential ectomycorrhizas and non-ectomycorrhizas from all other fungi (Branco et al. 2013. PLoS One 8: 1–10).
 
-The algorithm used by FunGuild was first developed by Scott Bates in R to assign functions to all fungi.
+At the same time, an R script was independently developed by Scott Bates (Bates et al. 2013. ISME J. 7, 652–659. doi:10.1038/ismej.2012.147)
 
-Current FunGuild script is developed by Zewei Song in python to improve performance and compatibility.
+At the University of Minnesota, with strong initial efforts led by Scott Bates and continued with Nhu Nguyen & Peter Kennedy, Zewei Song unified these two scripts, including improved performance and compatibility.
+
 ###################################################################################
 
 Zewei Song
-2/14/2015
+2/16/2015
 songzewei@outlook.com
 '''
 
@@ -58,10 +60,9 @@ start = timeit.default_timer()
 #Command line parameters#####################################################################
 parser = argparse.ArgumentParser()
 
-parser.add_argument("-otu", help="Path and file name of the OTU table. The script will try to detect the delimiter"
-					"in the file, but tab or csv are preferred formats.") 
-parser.add_argument("-m", "--matched", action="store_true", help="Ask the script to output a otu table with function assigned OTUs") 
-parser.add_argument("-u", "--unmatched", action="store_true", help="Ask the script to output a otu table with function assigned OTUs")
+parser.add_argument("-otu", help="Path and file name of the OTU table. The script will try to detect the delimiter in the file, but tab or csv are preferred formats.") 
+parser.add_argument("-m", "--assigned", action="store_true", help="Ask the script to output a otu table with function assigned OTUs") 
+parser.add_argument("-u", "--unassigned", action="store_true", help="Ask the script to output a otu table with function assigned OTUs")
 
 args = parser.parse_args()
 
@@ -78,13 +79,13 @@ with open(otu_file, 'r') as f1:
 dot_position = [i for i in range(len(otu_file)) if otu_file.startswith('.', i)] #Get the position of . in the input filename
 
 if not dot_position: #the file does not have extension
-	matched_file = args.otu + '.matched.txt'
-	unnmatched_file = args.otu + '.unmatched.txt'
-	total_file = args.otu + '.function.txt'
+	assigned_file = args.otu + '_assigned.txt'
+	unnassigned_file = args.otu + '_unassigned.txt'
+	total_file = args.otu + '_function.txt'
 else:
-	matched_file = args.otu[:dot_position[-1]] + '.matched.txt'
-	unmatched_file = args.otu[:dot_position[-1]] + '.unmatched.txt'
-	total_file = args.otu[:dot_position[-1]] + '.function.txt'
+	assigned_file = args.otu[:dot_position[-1]] + '_assigned.txt'
+	unassigned_file = args.otu[:dot_position[-1]] + '_unassigned.txt'
+	total_file = args.otu[:dot_position[-1]] + '_function.txt'
 ###########################################################################################
 
 # Import Function Database from GitHub, and get it ready.##################################
@@ -259,22 +260,22 @@ unique_list.sort(key=lambda x: int(sum(map(int,x[1:index_tax]))), reverse=True)
 ################################################################################################
 
 #Write to output files##############################################################################
-#Output matched OTUs to a new file
-if args.matched:
-	if os.path.isfile(matched_file) == True:
-		os.remove(matched_file)
-	output = open(matched_file,'a')
-	#Write the matched list header
+#Output assigned OTUs to a new file
+if args_assigned:
+	if os.path.isfile(assigned_file) == True:
+		os.remove(assigned_file)
+	output = open(assigned_file,'a')
+	#Write the assigned list header
 	output.write('%s' % ('\t'.join(header))) #Header
 
-	#Write the matched OTU table
+	#Write the assigned OTU table
 	for item in unique_list:
 		rec = '\t'.join(item)    
 		output.write('%s' % rec)
 	output.close()
 
-#Output unmatched OTUs to a new file
-unmatched_list = []    
+#Output unassigned OTUs to a new file
+unassigned_list = []    
 
 for rec in otu_tax:
 	count2 = 0        
@@ -282,33 +283,33 @@ for rec in otu_tax:
 		if rec[0] == new_rec[0]: #Check if the current record is in the unique_list (has been assigned a function)
 			count2 += 1
 	if count2 == 0:
-		unmatched_list.append(rec)
+		unassigned_list.append(rec)
 
-count_unmatched = 0
+count_unassigned = 0
 
 #Add 'Unassigned' to the 'Notes' column
-for item in unmatched_list:
+for item in unassigned_list:
 	l = len(header) - len(item)
 	for i in range(l):
 		item.extend('-')
 	item[index_notes] = 'Unassigned'
 
-if args.unmatched:
-	if os.path.isfile(unmatched_file) == True: 
-		os.remove(unmatched_file)
-	output_unmatched = open(unmatched_file, 'a')
-	output_unmatched.write('%s' % ('\t'.join(header)))		
-	for item in unmatched_list:
+if args_unassigned:
+	if os.path.isfile(unassigned_file) == True: 
+		os.remove(unassigned_file)
+	output_unassigned = open(unassigned_file, 'a')
+	output_unassigned.write('%s' % ('\t'.join(header)))		
+	for item in unassigned_list:
 		rec = '\t'.join(item)
-		output_unmatched.write('%s\n' % rec)
-		count_unmatched += 1
-	output_unmatched.close()
+		output_unassigned.write('%s\n' % rec)
+		count_unassigned += 1
+	output_unassigned.close()
  
-#Output the combined matched and unmatched OTUs to a new file
+#Output the combined assigned and unassigned OTUs to a new file
 if os.path.isfile(total_file) == True: 
 	os.remove(total_file)
 
-total_list = unique_list + unmatched_list #Combine the two OTU tables
+total_list = unique_list + unassigned_list #Combine the two OTU tables
 total_list.sort(key=lambda x: int(sum(map(int,x[1:index_tax]))), reverse=True) #Sorted the combined OTU table
 
 output_total = open(total_file, 'a')
@@ -327,12 +328,12 @@ print "FunGuild tried to assign function to %i OTUs in '%s'."  %(count_total, ot
 print "%i OTUs were assigned a function." %(count)
 print "Result saved to '%s'" %(total_file)
 
-if args.matched or args.unmatched:
+if args_assigned or args_unassigned:
 	print '\nAdditional output:'
-	if args.matched:
-		print "%i OTUs have been assigned functions and saved to %s." %(count, matched_file)
-	if args.unmatched:
-		print "%i OTUs were not assigned for a function, these are saved to %s." %(count_unmatched, unmatched_file)
+	if args_assigned:
+		print "%i OTUs have been assigned functions and saved to %s." %(count, assigned_file)
+	if args_unassigned:
+		print "%i OTUs were not assigned for a function, these are saved to %s." %(count_unassigned, unassigned_file)
 
 # Finish the program
 stop = timeit.default_timer()
