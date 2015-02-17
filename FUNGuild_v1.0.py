@@ -10,8 +10,7 @@ optional arguments:
   -h, --help       Show this help message and exit
   -otu OTU         Path and file name of the OTU table. The script will try to
                    detect the delimiters in the file, but tab or csv are
-                   preferred formats. Be sure that the first line of the OTU table is not 		
-                   blocked out with a #
+                   preferred formats.
   -a, --assigned   Ask the script to output a otu table with function assigned
                    OTUs
   -u, --unassigned Ask the script to output a otu table with unassigned OTUs
@@ -60,7 +59,7 @@ start = timeit.default_timer()
 #Command line parameters#####################################################################
 parser = argparse.ArgumentParser()
 
-parser.add_argument("-otu", help="Path and file name of the OTU table. The script will try to detect the delimiter in the file, but tab or csv are preferred formats. Be sure that the first line of the OTU table is not blocked out with a '#'") 
+parser.add_argument("-otu", help="Path and file name of the OTU table. The script will try to detect the delimiter in the file, but tab or csv are preferred formats.") 
 parser.add_argument("-a", "--assigned", action="store_true", help="Ask the script to output an otu table with OTUs that have been assigned to function") 
 parser.add_argument("-u", "--unassigned", action="store_true", help="Ask the script to output an otu table with unassigned OTUs")
 
