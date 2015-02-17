@@ -4,7 +4,7 @@ The FUNGuild bioinformatic tool is based on an original in-house python script r
 
 A current version of Python (https://www.python.org/) must be installed on the user’s local machine, before the FUNGuild script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/FUNGuild.py) can be used. The FUNGuild database is accessed by the python script remotely and, therefore, does not need to be loaded to the user’s local machine; however, the script must be able to access the internet to connect with the database.
 
-An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/OTU_table_example.csv) to demonstrate table formatting.
+An example OTU table has been provided in the FUNGuild GitHub repository (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/otu_table_example.txt) to demonstrate table formatting.
 
 **************************************
 
