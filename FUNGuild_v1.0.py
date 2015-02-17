@@ -139,9 +139,17 @@ print ""
 print "Reading in the OTU table: '%s'" %(args.otu)
 print ""
 
-#load the header
+#load the header and detect the delimiter in the file
 with open(otu_file) as otu:
 	header = otu.next().rstrip('\n').split(otu_delimiter) 
+
+if 'taxonomy' not in header: #Check if 'taxonomy' is an individual item in the header list.
+	taxonomy_checker = "".join(header)
+	if taxonomy_checker.find('taxonomy') != -1:  #Check if 'taxonomy' is attached with other column names.
+		print 'Taxonomy column is present but the header of your OTU table is not properly formated. Please check the help document for the format of the OTU table.'
+	else:
+		print 'Cannot find the taxonomy column, please check you OTU table.'
+	sys.exit(0)
 
 #Attach all columns of database file to the header of the new OTU table
 for item in header_database:
