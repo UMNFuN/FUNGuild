@@ -1,8 +1,6 @@
 
 <h1>FUNGuild: Fungi + fUNctional + Guild</h>
 
-**************************************
-
 https://github.com/UMNFuN/FUNGuild
 
 http://glimmer.rstudio.com/stbates/FUNGuild/
