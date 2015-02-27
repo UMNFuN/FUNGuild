@@ -23,6 +23,8 @@ CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
 Data pertaining to particular fungal taxa can be submitted to the FUNGuild database as single (inputted via an online user interface - http://glimmer.rstudio.com/stbates/FUNGuild/) or multiple (inputted online as a tab delimited text file - http://glimmer.rstudio.com/stbates/FUNGuildUpload/). All submitted entries will be reviewed by the database curators prior to being migrated to the main FUNGuild DB.
 
+**************************************
+
 Information should be entered into each FUNGuild database field, in sequence, as follows:
 
     •    Taxon: The scientific name (e.g., Ganoderma).
@@ -42,6 +44,8 @@ Information should be entered into each FUNGuild database field, in sequence, as
     •    Notes: Any other relevant information related to the taxon (e.g., “Facultative human pathogen causing coccidioidomycosis” for Coccidioides immitis).
 
     •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived (e.g., Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20: 217-263). Data for taxa that is based on peer-reviewed publications is preferred.
+    
+**************************************
 
 The taxon entries that you have proposed for database will be visible on the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database (queries to the FUNGuild DB can be carried out via the single entry user interface at http://glimmer.rstudio.com/stbates/FUNGuild/). 
 
