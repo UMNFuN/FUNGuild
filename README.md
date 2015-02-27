@@ -47,7 +47,7 @@ Information should be entered into each FUNGuild database field, in sequence, as
     
 **************************************
 
-The taxon entries that you have proposed for database will be visible on the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database (queries to the FUNGuild DB can be carried out via the single entry user interface at http://glimmer.rstudio.com/stbates/FUNGuild/). 
+The taxon entries that you have proposed for addition to the database will be visible on the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database (taxon queries to the FUNGuild DB can be carried out via the single entry user interface at http://glimmer.rstudio.com/stbates/FUNGuild/). 
 
 Once migrated, your entries will automatically be available to all using the FUNGuild bioinformatic tool to make annotated assignments (e.g., guilds) to their OTU tables of fungal taxa.
 
