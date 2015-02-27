@@ -1,5 +1,5 @@
 
-<h3>FUNGuild: Fungi + fUNctional + Guild</h3>
+<h2>FUNGuild: Fungi + fUNctional + Guild</h2>
 
 **************************************
 
