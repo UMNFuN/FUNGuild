@@ -7,6 +7,8 @@ http://glimmer.rstudio.com/stbates/FUNGuild/
 
 http://glimmer.rstudio.com/stbates/FUNGuildUpload/
 
+http://funguild.org/funguild_db.php
+
 **************************************
 
 GENERAL NOTES
@@ -42,6 +44,7 @@ Information should be entered into each FUNGuild database field, in sequence, as
     •    Notes: Any other relevant information related to the taxon (e.g., “Facultative human pathogen causing coccidioidomycosis” for Coccidioides immitis).
 
     •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived (e.g., Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20: 217-263). Data for taxa that is based on peer-reviewed publications is preferred.
+    
     
 **************************************
 
