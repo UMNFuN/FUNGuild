@@ -1,0 +1,5 @@
+Taxon	Taxon.Level	Trophic.Mode	Guild	Confidence.Ranking	Growth.Morphology	Trait	Notes	Citation.Source
+Ganoderma	7	Pathotroph-Saprotroph	Plant Pathogen-Wood Saprotroph	Highly Probable	Bracket Fungus	White Rot	NULL	Gilbertson RL; Ryvarden L. 1987-1987. North American Polypores. Fungiflora, Oslo.
+Magnaporthe poae	8	Pathotroph	Plant pathogen	Probable	NULL	NULL	"Causing turfgrass disease - e.g., Summer Patch"	http://www.apsnet.org/publications/commonnames/Pages/default.aspx
+Candida albicans	8	Pathotroph	Animal pathogen	Highly Probable	NULL	NULL	For the most part commensal but can become human pathogenic	www.cdc.gov
+Caloplaca	7	Symbiotroph	Lichenized	Highly Probable	Thallus	NULL	Commonly called firedot lichens	Esslinger TL. 2014. North Dakota State University: http://www.ndsu.edu/pubweb
