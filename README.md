@@ -3,9 +3,11 @@
 
 https://github.com/UMNFuN/FUNGuild
 
-http://glimmer.rstudio.com/stbates/fg_entry/
+http://glimmer.rstudio.com/stbates/funguild
 
-http://glimmer.rstudio.com/stbates/fg_upload/
+http://glimmer.rstudio.com/stbates/fg_entry
+
+http://glimmer.rstudio.com/stbates/fg_upload
 
 http://funguild.org/funguild_db.php
 
