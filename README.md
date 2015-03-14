@@ -1,11 +1,11 @@
 
 <h1>FUNGuild: Fungi + fUNctional + Guild</h>
 
-http://glimmer.rstudio.com/stbates/funguild
+http://glimmer.rstudio.com/stbates/funguild/
 
-http://glimmer.rstudio.com/stbates/fg_entry
+http://glimmer.rstudio.com/stbates/fg_entry/
 
-http://glimmer.rstudio.com/stbates/fg_upload
+http://glimmer.rstudio.com/stbates/fg_upload/
 
 http://funguild.org/funguild_db.php
 
@@ -25,7 +25,7 @@ An example OTU table has been provided in the FUNGuild GitHub repository (https:
 
 Taxon queries to the FUNGuild DB can be carried out here:
 
-http://glimmer.rstudio.com/stbates/db_query 
+http://glimmer.rstudio.com/stbates/db_query/
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
