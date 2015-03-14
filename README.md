@@ -1,8 +1,6 @@
 
 <h1>FUNGuild: Fungi + fUNctional + Guild</h>
 
-https://github.com/UMNFuN/FUNGuild
-
 http://glimmer.rstudio.com/stbates/funguild
 
 http://glimmer.rstudio.com/stbates/fg_entry
@@ -51,7 +49,7 @@ Information should be entered into each FUNGuild database field, in sequence, as
 
     •    Trait: Functional or morphological traits such as “White Rot” or “Contact Exploration Type” would be appropriate for this field.
 
-    •    Notes: Any other relevant information related to the taxon (e.g., “Facultative human pathogen causing coccidioidomycosis” for Coccidioides immitis).
+    •    Notes: Any other relevant information related to the taxon (e.g., “Facultative human pathogen causing coccidioidomycosis” for <i>Coccidioides immitis</i>).
 
     •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived (e.g., Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20: 217-263). Data for taxa that is based on peer-reviewed publications is preferred.
     
