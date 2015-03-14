@@ -17,9 +17,17 @@ GENERAL NOTES
 
 The FUNGuild bioinformatic tool is based on an original in-house python script referenced in Branco et al. 2013. PLoS One 8: 1–10 (http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078295).
 
-A current version of Python (https://www.python.org/) must be installed on the user’s local machine, before the FUNGuild script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/FUNGuild_v1.0.py) can be used. The FUNGuild database is accessed by the python script remotely and, therefore, does not need to be loaded to the user’s local machine. However, the script must be able to access the internet to connect with the database.
+To run the FUNGuild bioinformatic tool locally, a current version of Python (https://www.python.org/) must be installed on the user’s local machine before the FUNGuild script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/FUNGuild_v1.0.py) can be used. The FUNGuild database is accessed by the python script remotely and, therefore, does not need to be loaded to the user’s local machine. However, the script must be able to access the internet to connect with the database.
+
+An online version of the FUNGuild bioinformatic tool, the 'assignment application', is also available here:
+
+http://glimmer.rstudio.com/stbates/funguild/
 
 An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) to demonstrate table formatting.
+
+Taxon queries to the FUNGuild DB can be carried out here:
+
+http://glimmer.rstudio.com/stbates/db_query 
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
@@ -39,18 +47,17 @@ Information should be entered into each FUNGuild database field, in sequence, as
 
     •    Confidence Ranking: “Highly Probable” (= absolutely certain), “Probable” (= fairly certain), “Possible” (= suspected but not proven, conflicting reports given, multiple associated guilds, etc.).
 
-    •    Growth Morphology: basic morphological categories such as Gasteroid Fungus, Mushroom, Facultative Yeast, Yeast, or Thallus should be noted.
+    •    Growth Form: basic morphological categories such as Gasteroid Fungus, Mushroom, Facultative Yeast, Yeast, or Thallus should be noted.
 
-    •    Trait: Functional or morphological traits such as “White Rot” or “Contact Exploration Type” would be appropriate for field.
+    •    Trait: Functional or morphological traits such as “White Rot” or “Contact Exploration Type” would be appropriate for this field.
 
     •    Notes: Any other relevant information related to the taxon (e.g., “Facultative human pathogen causing coccidioidomycosis” for Coccidioides immitis).
 
     •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived (e.g., Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20: 217-263). Data for taxa that is based on peer-reviewed publications is preferred.
     
-    
 **************************************
 
-The taxon entries that you have proposed for addition to the database will be visible on the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database (taxon queries to the FUNGuild DB can be carried out via the single entry user interface at http://glimmer.rstudio.com/stbates/fg_entry/). 
+Taxon entries proposed for addition to the database via the online 'crowd source' forms will be visible on the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database.
 
-Once migrated, your entries will automatically be available to all using the FUNGuild bioinformatic tool to make annotated assignments (e.g., guilds) to their OTU tables of fungal taxa.
+Once migrated, proposed entries will automatically be available to all using the FUNGuild bioinformatic tool to make annotated assignments (e.g., guilds) to their OTU tables of fungal taxa.
 
