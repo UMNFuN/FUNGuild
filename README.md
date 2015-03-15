@@ -3,6 +3,8 @@
 
 http://glimmer.rstudio.com/stbates/funguild/
 
+http://glimmer.rstudio.com/stbates/fg_query/
+
 http://glimmer.rstudio.com/stbates/fg_entry/
 
 http://glimmer.rstudio.com/stbates/fg_upload/
@@ -25,7 +27,7 @@ An example OTU table has been provided in the FUNGuild GitHub repository (https:
 
 Taxon queries to the FUNGuild DB can be carried out here:
 
-http://glimmer.rstudio.com/stbates/db_query/
+http://glimmer.rstudio.com/stbates/fg_query/
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
