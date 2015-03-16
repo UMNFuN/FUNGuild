@@ -1,15 +1,9 @@
 
 <h1>FUNGuild: Fungi + fUNctional + Guild</h>
 
-http://glimmer.rstudio.com/stbates/funguild/
+http://funguild.org
 
-http://glimmer.rstudio.com/stbates/fg_query/
-
-http://glimmer.rstudio.com/stbates/fg_entry/
-
-http://glimmer.rstudio.com/stbates/fg_upload/
-
-http://funguild.org/funguild_db.php
+http://stbates.org/funguild_db.php
 
 **************************************
 
@@ -21,13 +15,13 @@ To run the FUNGuild bioinformatic tool locally, a current version of Python (htt
 
 An online version of the FUNGuild bioinformatic tool, the 'assignment application', is also available here:
 
-http://glimmer.rstudio.com/stbates/funguild/
+http://funguild.org
 
 An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) to demonstrate table formatting.
 
 Taxon queries to the FUNGuild DB can be carried out here:
 
-http://glimmer.rstudio.com/stbates/fg_query/
+https://thelab.shinyapps.io/fg_query/
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
