@@ -2,7 +2,7 @@
 '''
 This script assigns functional information to the OTUs in the user's OTU table. The OTU table need to have a column names 'taxonomy', containing information from a reference database (such as UNITE). It is required that the first line of the OTU table to be the header, without any additional comments. Some program, such as single_rarefaction.py in Qiime will add an additioal comment before the header, this has to be removed before using the FunGuild script. The script will try to recognized the delimiter in the user's OTU table, but comma (.csv) or tab delimiter format are recommended.
 
-The functional database is fetched from Github (https://raw.githubusercontent.com/xerantheum/fungal_function/master/fungal_guild_table.txt)
+The functional database is fetched from http://www.stbates.org/funguild_db.php
 
 Script usage: FunGuild.py [-h] [-otu OTU_file] [-m] [-u]
 
@@ -89,12 +89,12 @@ else:
 
 # Import Function Database from GitHub, and get it ready.##################################
 print "FunGuild v1.0 Beta"
-print "Downloading database from funguild.org ..."
+print "Downloading database ..."
 
 function_file = 'temp_db.txt' #temp file to store database file
 
 temp = 'temp.txt'
-url = "http://funguild.org/funguild_db.php"
+url = "http://stbates.org/funguild_db.php"
 urllib.urlretrieve(url, temp)
 
 f = open(temp,'r')
@@ -212,7 +212,7 @@ percent = 0 # line number in the database
 otu_redundant = []
 otu_new = []
 
-print "Searching the function database..."
+print "Searching the FUNGuild database..."
 
 f_database = open(function_file, 'r')
 for record in f_database:
@@ -348,15 +348,15 @@ output_total.close()
 
 #Print report on the screen#########################################################################################
 print "FunGuild tried to assign function to %i OTUs in '%s'."  %(count_total, otu_file)
-print "%i OTUs were assigned a function." %(count)
+print "FUNGuild made assignments on %i OTUs." %(count)
 print "Result saved to '%s'" %(total_file)
 
 if args.matched or args.unmatched:
 	print '\nAdditional output:'
 	if args.matched:
-		print "%i OTUs have been assigned functions and saved to %s." %(count, matched_file)
+		print "FUNGuild made assignments on %i OTUs, these have been saved to %s." %(count, matched_file)
 	if args.unmatched:
-		print "%i OTUs were not assigned for a function, these are saved to %s." %(count_unmatched, unmatched_file)
+		print "%i OTUs were unassigned, these are saved to %s." %(count_unmatched, unmatched_file)
 
 # Finish the program
 stop = timeit.default_timer()
