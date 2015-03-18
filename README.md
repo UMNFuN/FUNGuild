@@ -25,7 +25,7 @@ https://thelab.shinyapps.io/fg_query/
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
-Data pertainhttps://thelab.shinyapps.io/fg_entry/) or multiple (inputted online as a tab delimited text file - https://thelab.shinyapps.io/fg_upload/). All submitted entries will be reviewed by the database curators prior to being migrated to the main FUNGuild DB.
+Data pertain (https://thelab.shinyapps.io/fg_entry/) or multiple (inputted online as a tab delimited text file - https://thelab.shinyapps.io/fg_upload/). All submitted entries will be reviewed by the database curators prior to being migrated to the main FUNGuild DB.
 
 **************************************
 
@@ -43,9 +43,9 @@ Information should be entered into each FUNGuild database field, in sequence, as
 
     •    Growth Form: A basic morphological categories such as "Agaricoid", "Boletoid", "Clavarioid", "Cup Fungus", "Facultative Yeast", "Gasteroid", "Hydnoid", " Jelly Fungus", "Phalloid", "Polyporoid", "Pyrenomycete", "Resupinate", "Rust", "Secotioid", "Smut", "Yeast", or "Thallus" should be noted.
 
-    •    Trait: Other functional or morphological traits such as "Brown Rot", "Hypogeous", "Opportunistic Human Pathogen", "Poisonous", "White Rot" or "Contact Exploration Type" would be appropriate for this field.
+    •    Trait: Other functional or morphological traits such as "Brown Rot", "Hypogeous", "Poisonous", "White Rot" or "Contact Exploration Type" would be appropriate for this field.
 
-    •    Notes: Any other relevant information related to the taxon (e.g., "Facultative human pathogen causing coccidioidomycosis" for Coccidioides immitis).
+    •    Notes: Any other relevant information related to the taxon (e.g., "Facultative human pathogen causing coccidioidomycosis" for Coccidioides immitis, "Host - Arecaceae - Casuarinaceae, Palmae, Sapotaceae" for Xylaria obovata, or "Syn. Umbilicaria" for Actinogyra).
 
     •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived e.g.:
     
