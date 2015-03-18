@@ -25,7 +25,7 @@ https://thelab.shinyapps.io/fg_query/
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
-Data pertain (https://thelab.shinyapps.io/fg_entry/) or multiple (inputted online as a tab delimited text file - https://thelab.shinyapps.io/fg_upload/). All submitted entries will be reviewed by the database curators prior to being migrated to the main FUNGuild DB.
+- Data pertaining to particular fungal taxa can be submitted to the FUNGuild database as single (inputted via an online user interface - https://thelab.shinyapps.io/fg_entry/) or multiple (inputted online as a tab delimited text file - https://thelab.shinyapps.io/fg_upload/). All submitted entries will be reviewed by the database curators prior to being migrated to the main FUNGuild DB.
 
 **************************************
 
