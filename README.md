@@ -19,7 +19,7 @@ http://funguild.org (and the R shiny backend can be found here: http://github.co
 
 An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) to demonstrate table formatting.
 
-Taxon queries to the FUNGuild DB can be carried out here:
+Queries to the FUNGuild DB can be carried out here:
 
 https://thelab.shinyapps.io/fg_query/
 
