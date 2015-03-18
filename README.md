@@ -41,7 +41,7 @@ Information should be entered into each FUNGuild database field, in sequence, as
 
     •    Confidence Ranking: "Highly Probable" (= absolutely certain), "Probable" (= fairly certain), "Possible" (= suspected but not proven, conflicting reports given, etc.).
 
-    •    Growth Form: A basic morphological categories such as "Agaricoid", "Boletoid", "Clavarioid", "Cup Fungus", "Facultative Yeast", "Gasteroid", "Hydnoid", " Jelly Fungus", "Phalloid", "Polyporoid", "Pyrenomycete", "Resupinate", "Rust", "Secotioid", "Smut", "Yeast", or "Thallus" should be noted.
+    •    Growth Form: A basic morphological category such as "Agaricoid", "Boletoid", "Clavarioid", "Cup Fungus", "Facultative Yeast", "Gasteroid", "Hydnoid", " Jelly Fungus", "Phalloid", "Polyporoid", "Pyrenomycete", "Resupinate", "Rust", "Secotioid", "Smut", "Yeast", or "Thallus" should be noted.
 
     •    Trait: Other functional or morphological traits such as "Brown Rot", "Hypogeous", "Poisonous", "White Rot" or "Contact Exploration Type" would be appropriate for this field.
 
@@ -67,7 +67,7 @@ Information should be entered into each FUNGuild database field, in sequence, as
     
 **************************************
 
-Taxon entries proposed for addition to the database via the online 'crowd source' forms will be visible on the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database.
+- Taxon entries proposed for addition to the database via the online 'crowd source' forms will be visible on the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database.
 
-Once migrated, proposed entries will automatically be available to all using the FUNGuild bioinformatic tool to make annotated assignments (e.g., guilds) to their OTU tables of fungal taxa.
+- Once migrated, proposed entries will automatically be available to all using the FUNGuild bioinformatic tool to make annotated assignments (e.g., guilds) to their OTU tables of fungal taxa.
 
