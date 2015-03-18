@@ -49,19 +49,19 @@ Information should be entered into each FUNGuild database field, in sequence, as
 
     •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived e.g.:
     
-    Costa IPMW et al. 2012. Checklist of endophytic fungi from tropical regions. Mycotaxon 119:26
+            Costa IPMW et al. 2012. Checklist of endophytic fungi from tropical regions. Mycotaxon 119:26
     
-    Esslinger TL. 2014. North Dakota State University (http://www.ndsu.edu/pubweb/~esslinge/chcklst/chcklst7.htm)
+            Esslinger TL. 2014. North Dakota State University (http://www.ndsu.edu/pubweb/~esslinge/chcklst/chcklst7.htm)
     
-    James TY et al. 2006. Nature 443:818-822
+            James TY et al. 2006. Nature 443:818-822
     
-    Kurtzman CP, Fell JW, Boekhout T eds. 2011. The Yeasts, a Taxonomic Study. Fifth Edition. Vols 1-3. Elsevier, San Diego
+            Kurtzman CP, Fell JW, Boekhout T eds. 2011. The Yeasts, a Taxonomic Study. Fifth Edition. Vols 1-3. Elsevier, San Diego
     
-    Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20:217-263
+            Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20:217-263
     
-    Outline of Ascomycota (http://www.fieldmuseum.org/myconet)
+            Outline of Ascomycota (http://www.fieldmuseum.org/myconet)
     
-    http://www.apsnet.org/publications/commonnames/Pages/default.aspx
+            http://www.apsnet.org/publications/commonnames/Pages/default.aspx
     
     *Data for taxa that is based on peer-reviewed publications is preferred.
     
