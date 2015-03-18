@@ -41,13 +41,13 @@ Information should be entered into each FUNGuild database field, in sequence, as
 
     •    Confidence Ranking: “Highly Probable” (= absolutely certain), “Probable” (= fairly certain), “Possible” (= suspected but not proven, conflicting reports given, multiple associated guilds, etc.).
 
-    •    Growth Form: A basic morphological categories such as Gasteroid Fungus, Mushroom, Facultative Yeast, Yeast, or Thallus should be noted.
+    •    Growth Form: A basic morphological categories such as Agariciod, Gasteroid, Facultative Yeast, Yeast, or Thallus should be noted.
 
     •    Trait: Functional or morphological traits such as “White Rot” or “Contact Exploration Type” would be appropriate for this field.
 
     •    Notes: Any other relevant information related to the taxon (e.g., “Facultative human pathogen causing coccidioidomycosis” for Coccidioides immitis).
 
-    •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived (e.g., Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20: 217-263). Data for taxa that is based on peer-reviewed publications is preferred.
+    •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived (e.g., Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20:217-263). Data for taxa that is based on peer-reviewed publications is preferred.
     
 **************************************
 
