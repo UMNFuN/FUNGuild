@@ -41,7 +41,7 @@ Information should be entered into each FUNGuild database field, in sequence, as
 
     •    Confidence Ranking: “Highly Probable” (= absolutely certain), “Probable” (= fairly certain), “Possible” (= suspected but not proven, conflicting reports given, multiple associated guilds, etc.).
 
-    •    Growth Form: basic morphological categories such as Gasteroid Fungus, Mushroom, Facultative Yeast, Yeast, or Thallus should be noted.
+    •    Growth Form: A basic morphological categories such as Gasteroid Fungus, Mushroom, Facultative Yeast, Yeast, or Thallus should be noted.
 
     •    Trait: Functional or morphological traits such as “White Rot” or “Contact Exploration Type” would be appropriate for this field.
 
