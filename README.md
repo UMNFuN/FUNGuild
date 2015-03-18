@@ -15,7 +15,7 @@ To run the FUNGuild bioinformatic tool locally, a current version of Python (htt
 
 An online version of the FUNGuild bioinformatic tool, the 'assignment application', is also available here:
 
-http://funguild.org
+http://funguild.org (and the R shiny backend can be found here: http://github.com/thebateslab/funguild.shiny.backend/).
 
 An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) to demonstrate table formatting.
 
