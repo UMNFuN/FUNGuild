@@ -37,15 +37,15 @@ Information should be entered into each FUNGuild database field, in sequence, as
 
     •    Trophic Mode: One of three trophic categories [pathotroph = receiving nutrients at the expense of the host cells and causing disease (e.g., biotroph, parasite, pathogen, etc.); saprotroph = receiving nutrients by breaking down dead host cells (e.g., wood rotters, litter rotters, etc.); symbiotroph = receiving nutrients by exchanging resources with host cells (e.g., ectomycorrhiza, lichens, etc.)]. The concepts presented here are similar to those of Tedersoo et al. 2014. Global diversity and geography of soil fungi. Science 346(6213). DOI: 10.1126/science.1256688 (http://www.sciencemag.org/content/346/6213/1256688).
 
-    •    Guild: Provide a relevant guild descriptor (e.g., Algal Parasite, Animal Gut, Animal Pathogen, Arbuscular Mycorrhizal, Coprophilous, Dark Septate Endophyte, Ectomycorrhizal, Endophyte, Foliar Endophyte, Ericoid Mycorrhizal, Litter Saprotroph, Lichenicolous, Lichenized, Musicolous, Mycoparasite, Plant Pathogen, Soil Saprotroph, Undefined Saprotroph, Wood Saprotroph, etc). New guilds can be erected if necessary.
+    •    Guild: Provide a relevant guild descriptor (e.g., "Algal Parasite", "Animal Gut", "Animal Pathogen", "Arbuscular Mycorrhizal", "Coprophilous", "Dark Septate Endophyte", "Ectomycorrhizal", "Endophyte", "Foliar Endophyte", "Ericoid Mycorrhizal", "Litter Saprotroph", "Lichenicolous", "Lichenized", "Musicolous", "Mycoparasite", "Plant Pathogen", "Soil Saprotroph", "Undefined Saprotroph", "Wood Saprotroph", etc.). New guilds can be erected if necessary.
 
-    •    Confidence Ranking: “Highly Probable” (= absolutely certain), “Probable” (= fairly certain), “Possible” (= suspected but not proven, conflicting reports given, multiple associated guilds, etc.).
+    •    Confidence Ranking: "Highly Probable" (= absolutely certain), "Probable" (= fairly certain), "Possible" (= suspected but not proven, conflicting reports given, etc.).
 
     •    Growth Form: A basic morphological categories such as "Agaricoid", "Boletoid", "Clavarioid", "Cup Fungus", "Facultative Yeast", "Gasteroid", "Hydnoid", " Jelly Fungus", "Phalloid", "Polyporoid", "Pyrenomycete", "Resupinate", "Rust", "Secotioid", "Smut", "Yeast", or "Thallus" should be noted.
 
-    •    Trait: Other functional or morphological traits such as "Brown Rot", "Hypogeous", "Opportunistic Human Pathogen", "Poisonous", "White Rot" or “Contact Exploration Type” would be appropriate for this field.
+    •    Trait: Other functional or morphological traits such as "Brown Rot", "Hypogeous", "Opportunistic Human Pathogen", "Poisonous", "White Rot" or "Contact Exploration Type" would be appropriate for this field.
 
-    •    Notes: Any other relevant information related to the taxon (e.g., “Facultative human pathogen causing coccidioidomycosis” for Coccidioides immitis).
+    •    Notes: Any other relevant information related to the taxon (e.g., "Facultative human pathogen causing coccidioidomycosis" for Coccidioides immitis).
 
     •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived e.g.:
     
