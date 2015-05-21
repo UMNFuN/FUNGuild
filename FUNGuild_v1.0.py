@@ -84,7 +84,7 @@ args = parser.parse_args()
 otu_file = args.otu
 
 #Detect delimiter in the input file
-with open(otu_file, 'r') as f1:
+with open(otu_file, 'rU') as f1:
     dialect = csv.Sniffer().sniff(f1.read())
     f1.seek(0)
     otu_delimiter = dialect.delimiter
@@ -112,7 +112,7 @@ temp = 'temp.txt'
 url = "http://stbates.org/funguild_db.php"
 urllib.urlretrieve(url, temp)
 
-f = open(temp,'r')
+f = open(temp,'rU')
 data = f.read()
 f.close()
 
@@ -144,19 +144,7 @@ f.write("%s\n" %(header))
 for item in parse_data:
     f.write("%s\n" %("\t".join(item)))
 f.close()
-#Sometimes the database file has \r instead of \n at the end of each line. This arises problem when parsing the file.
-#Replace all \r with \n.
-f_database = open(function_file, 'r')
-new_line = []
-for line in f_database:
-	new_line.append(line.replace('\r','\n'))
 
-f_database.close()
-
-output = open(function_file,'w')
-for item in new_line:
-	output.write('%s' %item)
-output.close()
 
 #Detect the position of header
 f_database = open(function_file, 'r') # Open the database file.
@@ -186,20 +174,8 @@ print ""
 print "Reading in the OTU table: '%s'" %(args.otu)
 print ""
 
-#Sometimes the OTU table file has \r instead of \n at the end of each line. This arises problem when parsing the file.
-#Replace all \r with \n.
-f_otu = open(otu_file, 'r')
-with open(otu_file, 'rU') as f_otu:
-    new_line = []
-    for line in f_otu:
-    	new_line.append(line.replace('\r','\n'))
-
-with open(otu_file, 'w') as f_otu:
-    for item in new_line:
-        f_otu.write('%s' %item)
-
 #load the header
-with open(otu_file) as otu:
+with open(otu_file, 'rU') as otu:
 	header = otu.next().rstrip('\n').split(otu_delimiter) 
 
 #Attach all columns of database file to the header of the new OTU table
@@ -218,7 +194,7 @@ if index_tax == -1:
 
 #Search in function database################################################################
 # Read the OTU table into memory, and separate taxonomic levels with '@'.
-with open(otu_file) as otu:
+with open(otu_file, 'rU') as otu:
 	otu_tab = []    
 	for record in otu:
 		otu_current = record.split(otu_delimiter)
@@ -241,7 +217,7 @@ otu_new = []
 
 print "Searching the FUNGuild database..."
 
-f_database = open(function_file, 'r')
+f_database = open(function_file, 'rU')
 for record in f_database:
     # report the progress   
     percent += 1
