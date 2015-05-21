@@ -174,19 +174,6 @@ print ""
 print "Reading in the OTU table: '%s'" %(args.otu)
 print ""
 
-'''
-#Sometimes the OTU table file has \r instead of \n at the end of each line. This arises problem when parsing the file.
-#Replace all \r with \n.
-f_otu = open(otu_file, 'r')
-with open(otu_file, 'rU') as f_otu:
-    new_line = []
-    for line in f_otu:
-    	new_line.append(line.replace('\r','\n'))
-
-with open(otu_file, 'w') as f_otu:
-    for item in new_line:
-        f_otu.write('%s' %item)
-'''
 #load the header
 with open(otu_file, 'rU') as otu:
 	header = otu.next().rstrip('\n').split(otu_delimiter) 
