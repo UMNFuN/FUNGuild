@@ -1,5 +1,20 @@
 # -*- coding: utf-8 -*-
 '''
+Copyright (C) 2014-2015 Zewei Song
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	
 This script assigns functional information to the OTUs in the user's OTU table. The OTU table need to have a column names 'taxonomy', containing information from a reference database (such as UNITE). It is required that the first line of the OTU table to be the header, without any additional comments. Some program, such as single_rarefaction.py in Qiime will add an additioal comment before the header, this has to be removed before using the FunGuild script. The script will try to recognized the delimiter in the user's OTU table, but comma (.csv) or tab delimiter format are recommended.
 
 The functional database is fetched from http://www.stbates.org/funguild_db.php
@@ -129,7 +144,7 @@ f.write("%s\n" %(header))
 for item in parse_data:
     f.write("%s\n" %("\t".join(item)))
 f.close()
-#Sometimes Github file has \r instead of \n at the end of each line. This arises problem in Windows platform.
+#Sometimes the database file has \r instead of \n at the end of each line. This arises problem when parsing the file.
 #Replace all \r with \n.
 f_database = open(function_file, 'r')
 new_line = []
@@ -170,6 +185,18 @@ way_points = [int(total_length*(x/10.0)) for x in p]
 print ""
 print "Reading in the OTU table: '%s'" %(args.otu)
 print ""
+
+#Sometimes the OTU table file has \r instead of \n at the end of each line. This arises problem when parsing the file.
+#Replace all \r with \n.
+f_otu = open(otu_file, 'r')
+with open(otu_file, 'rU') as f_otu:
+    new_line = []
+    for line in f_otu:
+    	new_line.append(line.replace('\r','\n'))
+
+with open(otu_file, 'w') as f_otu:
+    for item in new_line:
+        f_otu.write('%s' %item)
 
 #load the header
 with open(otu_file) as otu:
@@ -279,7 +306,7 @@ for new_rec in unique_list:
         if new_rec[0] == rec[0]:
             new_rec[index_tax] = rec[index_tax]
 #Sort the new otu table by the total sequence number of each OTU.
-unique_list.sort(key=lambda x: int(sum(map(int,x[1:index_tax]))), reverse=True)
+unique_list.sort(key=lambda x: float(sum(map(float,x[1:index_tax]))), reverse=True)
 ################################################################################################
 
 #Write to output files##############################################################################
@@ -333,7 +360,7 @@ if os.path.isfile(total_file) == True:
 	os.remove(total_file)
 
 total_list = unique_list + unmatched_list #Combine the two OTU tables
-total_list.sort(key=lambda x: int(sum(map(int,x[1:index_tax]))), reverse=True) #Sorted the combined OTU table
+total_list.sort(key=lambda x: float(sum(map(float,x[1:index_tax]))), reverse=True) #Sorted the combined OTU table
 
 output_total = open(total_file, 'a')
 output_total.write('%s' % ('\t'.join(header)))
