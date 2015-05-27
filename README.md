@@ -1,5 +1,5 @@
 
-<h1>FUNGuild: Fungi + fUNctional + Guild</h>
+<h1>FUNGuild: Fungi + fUNctional + Guild</h1>
 
 http://stbates.org/funguild_db.php
 
