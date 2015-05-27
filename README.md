@@ -1,11 +1,9 @@
 
 <h1>FUNGuild: Fungi + fUNctional + Guild</h>
 
-http://funguild.org
-
 http://stbates.org/funguild_db.php
 
-**************************************
+****
 
 GENERAL NOTES
 
@@ -15,19 +13,13 @@ To run the FUNGuild bioinformatic tool locally, a current version of Python (htt
 
 An online version of the FUNGuild bioinformatic tool, the 'assignment application', is also available here:
 
-http://funguild.org (and the R shiny backend can be found here: http://github.com/thebateslab/funguild.shiny.backend/).
-
 An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) to demonstrate table formatting.
-
-Queries to the FUNGuild DB can be carried out here:
-
-https://thelab.shinyapps.io/fg_query/
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
-- Data pertaining to particular fungal taxa can be submitted to the FUNGuild database as single (inputted via an online user interface - https://thelab.shinyapps.io/fg_entry/) or multiple (inputted online as a tab delimited text file - https://thelab.shinyapps.io/fg_upload/). All submitted entries will be reviewed by the database curators prior to being migrated to the main FUNGuild DB.
+- Data pertaining to particular fungal taxa can be submitted to the FUNGuild database by contacting the db curator (xerantheum@gmail.com). All submitted entries will be reviewed by the database curators prior to being migrated to the main FUNGuild DB.
 
-**************************************
+****
 
 Information should be entered into each FUNGuild database field, in sequence, as follows:
 
@@ -65,9 +57,9 @@ Information should be entered into each FUNGuild database field, in sequence, as
     
     *Data for taxa that is based on peer-reviewed publications is preferred.
     
-**************************************
+****
 
-- Taxon entries proposed for addition to the database via the online 'crowd source' forms will be visible on the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database.
+- Taxon entries proposed for addition to the database will be visible in the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database.
 
 - Once migrated, proposed entries will automatically be available to all using the FUNGuild bioinformatic tool to make annotated assignments (e.g., guilds) to their OTU tables of fungal taxa.
 
