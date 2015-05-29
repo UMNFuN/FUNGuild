@@ -108,9 +108,9 @@ print "FunGuild v1.0 Beta"
 
 database_name = args.db
 if database_name == 'fungi':
-    url = 'http://stbates.org/funguild_db.php'
+    url = 'http://www.stbates.org/funguild_db.php'
 elif database_name == 'nematode':
-    url = 'http://stbates.org/nematode_db.php'
+    url = 'http://www.stbates.org/nemaguild_db.php'
 
 print "Downloading %s database ..." % database_name
 
