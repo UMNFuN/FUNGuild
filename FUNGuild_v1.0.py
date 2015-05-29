@@ -78,7 +78,7 @@ parser.add_argument("-otu", help="Path and file name of the OTU table. The scrip
 					"in the file, but tab or csv are preferred formats.") 
 parser.add_argument("-m", "--matched", action="store_true", help="Ask the script to output a otu table with function assigned OTUs") 
 parser.add_argument("-u", "--unmatched", action="store_true", help="Ask the script to output a otu table with function assigned OTUs")
-
+parser.add_argument("-db", choices=['fungi','nematode'], default='fungi', help="Assign a specified database to the script")
 args = parser.parse_args()
 
 #input files
@@ -105,12 +105,17 @@ else:
 
 # Import Function Database from GitHub, and get it ready.##################################
 print "FunGuild v1.0 Beta"
-print "Downloading database ..."
+
+database_name = args.db
+if database_name == 'fungi':
+    url = 'http://stbates.org/funguild_db.php'
+elif database_name == 'nematode':
+    url = 'http://stbates.org/nematode_db.php'
+
+print "Downloading %s database ..." % database_name
 
 function_file = 'temp_db.txt' #temp file to store database file
-
 temp = 'temp.txt'
-url = "http://stbates.org/funguild_db.php"
 urllib.urlretrieve(url, temp)
 
 f = open(temp,'rU')
