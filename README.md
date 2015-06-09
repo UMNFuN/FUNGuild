@@ -1,7 +1,9 @@
 
 <h1>FUNGuild: Fungi + fUNctional + Guild</h1>
 
+http://funguild.org (online version)
 http://stbates.org/funguild_db.php
+http://stbates.org/nemaguild_db.php
 
 ****
 
