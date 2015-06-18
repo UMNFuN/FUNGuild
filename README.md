@@ -23,9 +23,7 @@ An example OTU table has been provided in the FUNGuild GitHub repository (https:
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
-- Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases by contacting the db curator (xerantheum@gmail.com), or via the online submission application:
-
-http://www.stbates.org/guilds/entry.php
+- Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases by contacting the db curator (xerantheum@gmail.com), or via the online submission application (http://www.stbates.org/guilds/entry.php).
 
 - All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases.
 
