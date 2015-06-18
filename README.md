@@ -11,17 +11,27 @@ http://stbates.org/nemaguild_db.php
 
 GENERAL NOTES
 
-The FUNGuild bioinformatic tool is based on an original in-house python script referenced in Branco et al. 2013. PLoS One 8: 1–10 (http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078295).
+The Guilds bioinformatic tool is based on an original in-house python script referenced in Branco et al. 2013. PLoS One 8: 1–10 (http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078295).
 
-To run the FUNGuild bioinformatic tool locally, a current version of Python (https://www.python.org/) must be installed on the user’s local machine before the FUNGuild script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/FUNGuild_v1.0.py) can be used. The FUNGuild database is accessed by the python script remotely and, therefore, does not need to be loaded to the user’s local machine. However, the script must be able to access the internet to connect with the database.
+To run the Guilds bioinformatic tool locally, a current version of Python (https://www.python.org/) must be installed on the user’s local machine before the Guilds script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/Guilds_v1.0.py) can be used. The Guilds databases are accessed by the python script remotely and, therefore, they do not need to be loaded to the user’s local machine. However, the script must be able to access the internet to connect with the databases.
 
-An online version of the FUNGuild bioinformatic tool, the 'assignment application', is also available here:
+An online version of the Guilds bioinformatic tool, the 'assignment application', is also available here:
+
+http://funguild.org
 
 An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) to demonstrate table formatting.
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
-- Data pertaining to particular fungal taxa can be submitted to the FUNGuild database by contacting the db curator (xerantheum@gmail.com). All submitted entries will be reviewed by the database curators prior to being migrated to the main FUNGuild DB.
+- Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases by contacting the db curator (xerantheum@gmail.com), or via the online submission application:
+
+http://www.stbates.org/guilds/entry.php
+
+- All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases.
+
+- Taxon entries proposed for addition to the databases will be accessable once they have been reviewed by the database curators and migrated to the main database.
+
+- Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
 
 ****
 
@@ -63,7 +73,4 @@ Information should be entered into each FUNGuild database field, in sequence, as
     
 ****
 
-- Taxon entries proposed for addition to the database will be visible in the FUNGuild DB once they have been reviewed by the DB curators and migrated to the main database.
-
-- Once migrated, proposed entries will automatically be available to all using the FUNGuild bioinformatic tool to make annotated assignments (e.g., guilds) to their OTU tables of fungal taxa.
 
