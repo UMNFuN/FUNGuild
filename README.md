@@ -29,7 +29,7 @@ Information should be entered into each FUNGuild database field, in sequence, as
 
     •    Taxon: The scientific name (e.g., Ganoderma).
 
-    •    Taxon Level: A numeral corresponding the correct taxonomic level of the taxon (1 = phylum, 2 = sub phylum, 3 = class, 4 = sub class, 5 = order, 6 = family, 7 = genus, 8 = species, 0 = keyword).
+    •    Taxon Level: A numeral corresponding the correct taxonomic level for the taxon (0 = keyword, 3 = Phylum, 4 = Subphylum, 5 = Class, 6 = Subclass, 7 = Order, 8 = Suborder, 9 = Family, 10 = Subfamily, 11 = Tribe, 12 = Subtribe, 13 = Genus, 15 = Subgenus, 16 = Section, 17 = Subsection, 18 = Series , 19 = Subseries, 20 = Species, 21 = Subspecies, 22 = Variety, 23 = Subvariety", 24 = Form, 25 = Subform, 26 = Form Species).
 
     •    Trophic Mode: One of three trophic categories [pathotroph = receiving nutrients at the expense of the host cells and causing disease (e.g., biotroph, parasite, pathogen, etc.); saprotroph = receiving nutrients by breaking down dead host cells (e.g., wood rotters, litter rotters, etc.); symbiotroph = receiving nutrients by exchanging resources with host cells (e.g., ectomycorrhiza, lichens, etc.)]. The concepts presented here are similar to those of Tedersoo et al. 2014. Global diversity and geography of soil fungi. Science 346(6213). DOI: 10.1126/science.1256688 (http://www.sciencemag.org/content/346/6213/1256688).
 
