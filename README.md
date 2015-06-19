@@ -11,7 +11,7 @@ http://stbates.org/nemaguild_db.php
 
 GENERAL NOTES
 
-The Guilds bioinformatic tool is based on an original in-house python script referenced in Branco et al. 2013. PLoS One 8: 1–10 (http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078295).
+The Guilds bioinformatic tool is a two-component system that includes online community annotated databases and a python script that assigns functional information to operational taxonomic units (OTUs) obtained from next generation sequencing of environmental samples. The script is based on an original in-house python script referenced in Branco et al. 2013. PLoS One 8:1–10 (http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078295). It searches taxonomic strings in the user’s OTU table against the online Guilds databases (fungi or nematodes) containing taxonomic keywords and functional metadata. The output is the original OTU table with functional metadata appended, and users also have options to output an assigned OTUs only table and/or a table containing only OTUs for which assignments could not be made.
 
 To run the Guilds bioinformatic tool locally, a current version of Python (https://www.python.org/) must be installed on the user’s local machine before the Guilds script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/Guilds_v1.0.py) can be used. The Guilds databases are accessed by the python script remotely and, therefore, they do not need to be loaded to the user’s local machine. However, the script must be able to access the internet to connect with the databases.
 
