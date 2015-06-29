@@ -280,7 +280,7 @@ for item in otu_sort:
 
 #Copy the original taxonomy string (without @) to the unique OTU table
 otu_tax = []
-with open(otu_file) as f_otu:
+with open(otu_file, 'rU') as f_otu:
     for otu in f_otu:
         temp = otu.rstrip('\n').split(otu_delimiter)        
         otu_tax.append(temp)
