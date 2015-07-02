@@ -73,11 +73,11 @@ Information should be entered into each Guilds database field, in sequence, as f
 
 TROUBLESHOOTING
 
-Formatting: The python script expects a standard OTU table as input, and it is critical that this is formatted correctly before running the script. A typical OTU table in the text file format will look something like this:
+<b>Formatting:</b> The python script expects a standard OTU table as input, and it is critical that this is formatted correctly before running the script. A typical OTU table in the text file format will look something like this:
 
-OTU_ID<tab>sample1<tab>sample2<tab>sample3<tab>taxonomy<return>
-OTU_10<tab>10002<tab>10004<tab>0<tab>Fungi;Basidiomycota;Agaricomycetes;Agaricales;Cortinariaceae;Cortinarius<return>
-OTU_20<tab>10003<tab>0<tab>10001<tab>Fungi;Ascomycota;Eurotiomycetes;Chaetothyriales;Herpotrichiellaceae;Cladophialophora
+OTU_ID(tab)sample1(tab)sample2(tab)sample3(tab)taxonomy(return)
+OTU_10(tab)10002(tab)10004(tab)0(tab)Fungi;Basidiomycota;Agaricomycetes;Agaricales;Cortinariaceae;Cortinarius(return)
+OTU_20(tab)10003(tab)0(tab)10001(tab)Fungi;Ascomycota;Eurotiomycetes;Chaetothyriales;Herpotrichiellaceae;Cladophialophora
 
 You can consult this GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) for a more complete OTU file example.
 
@@ -95,7 +95,7 @@ Common errors include the following (move down through this list as needed, more
 
 - <b>Extra spaces</b>. Spaces can cause problems when a file is being read into a program, this is why they are typically replaced with an underscore in the taxonomic strings (e.g., 'Stylaria_sp.' in the above example). To correct this issue, open the OTU table in a text editor and remove space gaps (i.e., gaps that consist of more than a single space), and then clear all of the spaces (i.e., use the find/replace function to replace all spaces ' ' with an underscore '_').
 
-Online version of the script: The online Guilds_v1.0.py application (http://www.stbates.org/guilds/app.php) calls the python code from php when the 'Begin Analysis' button is 'pushed'. This application should work well for properly formatted (see above) OTU tables of a smaller file size (e.g., less than 25MB). There is a well known issue with php page time outs for processes that take a long time (read: more than the php default of 30 seconds). The script runs quickly, typically just a few seconds, but server handling of large files (e.g., loading them through your browser) can take time. To allow time for script processes to complete, the php 'max_execution_time' has been set to 0 (i.e., no time limit). Even though removing this restriction should allow time for processes to complete, large files can cause other problems that will trip a 500 'Internal Server Error' flag.
+<b>Online version of the script:</b> The online Guilds_v1.0.py application (http://www.stbates.org/guilds/app.php) calls the python code from php when the 'Begin Analysis' button is 'pushed'. This application should work well for properly formatted (see above) OTU tables of a smaller file size (e.g., less than 25MB). There is a well known issue with php page time outs for processes that take a long time (read: more than the php default of 30 seconds). The script runs quickly, typically just a few seconds, but server handling of large files (e.g., loading them through your browser) can take time. To allow time for script processes to complete, the php 'max_execution_time' has been set to 0 (i.e., no time limit). Even though removing this restriction should allow time for processes to complete, large files can cause other problems that will trip a 500 'Internal Server Error' flag.
 
 When working with large OTU table files, consider the following:
 
