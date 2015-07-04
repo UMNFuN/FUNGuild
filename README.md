@@ -30,7 +30,7 @@ RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
 
 - Open a terminal to run the script via command line (e.g., /Applications/Utilities/ and click on 'Terminal' for mac OR for Windows use Start or Start Menu and search for 'command' or 'cmd' and then click on the 'Command Prompt' icon). Be sure to follow any conventions (e.g., directory path formatting) that are relevant to your particular operating system.
 
-- Next, cd (change directory in the command line) into folder (directory) where you saved your .py file containing the Guilds script (mac note - you can drag the desired folder from the finder into the terminal to get the directory path rather than having to type it). For example on mac, type something like this ```cd /Users/username/Documents/python_scripts``` into the Terminal.
+- Next, cd (change directory in the command line) into folder (directory) where you saved your .py file containing the Guilds script (mac note - you can drag the desired folder from the finder into the terminal to get the directory path rather than having to type it). For example on mac, type something like this ```cd /Users/username/Documents/python_scripts``` into the terminal.
 
 - Determine the path to your properly formatted (see above) OTU table (e.g., /Users/username/Documents/project/otu_table_example.txt).
 
