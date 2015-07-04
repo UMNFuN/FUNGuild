@@ -69,15 +69,15 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
 
     Esslinger TL. 2014. North Dakota State University (http://www.ndsu.edu/pubweb/~esslinge/chcklst/chcklst7.htm)
     
-        James TY et al. 2006. Nature 443:818-822
-   
-        Kurtzman CP, Fell JW, Boekhout T eds. 2011. The Yeasts, a Taxonomic Study. Fifth Edition. Vols 1-3. Elsevier, San Diego
-
-        Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20:217-263
- 
-        Outline of Ascomycota (http://www.fieldmuseum.org/myconet)
-        
-        http://www.apsnet.org/publications/commonnames/Pages/default.aspx
+    James TY et al. 2006. Nature 443:818-822
+    
+    Kurtzman CP, Fell JW, Boekhout T eds. 2011. The Yeasts, a Taxonomic Study. Fifth Edition. Vols 1-3. Elsevier, San Diego
+    
+    Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20:217-263
+    
+    Outline of Ascomycota (http://www.fieldmuseum.org/myconet)
+    
+    http://www.apsnet.org/publications/commonnames/Pages/default.aspx
     
 *Data for taxa that is based on peer-reviewed publications is preferred.
 
