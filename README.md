@@ -21,6 +21,27 @@ http://funguild.org
 
 An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) to demonstrate table formatting.
 
+
+RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
+
+
+     * Make sure you local computer has Python 2 installed (see https://www.python.org/downloads/).
+
+     * Copy the Guilds python script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/Guilds_v1.0.py), paste it into a text file, and save it with the .py extension (e.g., Guilds_v1.0.py) rather than .txt (make sure that the hide extension setting is not activated, as the file might then actually save as e.g., Guilds_v1.0.py.txt).
+
+     * Open a terminal to run the script via command line (e.g., /Applications/Utilities/ and click on 'Terminal' for mac OR for Windows use Start or Start Menu and search for 'command' or 'cmd' and then click on the 'Command Prompt' icon). Be sure to follow any conventions (e.g., directory path formatting) that are relevant to your particular operating system.
+
+     * Next, cd (change directory in the command line) into folder (directory) where you saved your .py file containing the Guilds script (mac note - you can drag the desired folder from the finder into the terminal to get the directory path rather than having to type it). For example, type something like ```~ username$ cd /Users/username/Documents/python_scripts``` into the mac Terminal.
+
+     * Determine the path to your properly formatted (see above) OTU table (e.g., /Users/username/Documents/project/otu_table_example.txt)
+
+     * Make sure that your computer is connected to the Internet, as the script will need to access the online database of taxonomic key words.
+
+     * Make a Python call on the script (remember you should have already used the change directory command to cd into the folder that contains the script) giving the proper OTU table path (the -otu argument), desired taxonomic database (the -db argument; either ‘fungi’ or ‘nematode’; the default ‘fungi’ will be used if you don’t signify the -db argument), and desired output (add the argument -m to also output an OTU table with just the OTUs for which functional assignments could be made and/or -u to output a table with only OTUs that could not be assigned; a table that includes both the assigned and unassigned OTUs is the default output). For example on a mac, you would type something like this ```python Guilds_v1.0.py -otu /Users/username/Documents/project/otu_table_example.txt -db fungi -m -u``` into the terminal. 
+
+     * Hit the enter/return key on your computer, and allow a few seconds for the script to do its magic!
+
+
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
 - Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases (FUNGuild_db or NEMAGuild_db) by contacting the database curators (xerantheum@gmail.com or scott.thomas.bates@gmail.com), or via the online submission application (http://www.stbates.org/guilds/entry.php).
@@ -101,24 +122,4 @@ When working with large OTU table files, consider the following:
 
 - Zip OTU tables of a larger file size (e.g., over 10MB) before loading them onto the server. This approach has been tested with larger files and seems to be in working order; however, processing time is slowed considerably (which shouldn't be an issue for php page time outs - see above). You can always try larger OTU table sizes (up to 50MB when zipped), but a great deal of patience may be required. This being said, it is recommended that you use a local version of the program run from the command line to run the script (see below).
 
-- Run the script locally. Running the script from your local computer via command line will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds). Consider the following in order to run the script from the command line:
-
-     * Make sure you local computer has Python 2 installed (see https://www.python.org/downloads/).
-
-     * Copy the Guilds python script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/Guilds_v1.0.py), paste it into a text file, and save it with the .py extension (e.g., Guilds_v1.0.py) rather than .txt (make sure that the hide extension setting is not activated, as the file might then actually save as e.g., Guilds_v1.0.py.txt).
-
-     * Open a terminal to run the script via command line (e.g., /Applications/Utilities/ and click on 'Terminal' for mac OR for Windows use Start or Start Menu and search for 'command' or 'cmd' and then click on the 'Command Prompt' icon). Be sure to follow any conventions (e.g., directory path formatting) that are relevant to your particular operating system.
-
-     * Next, cd (change directory in the command line) into folder (directory) where you saved your .py file containing the Guilds script (mac note - you can drag the desired folder from the finder into the terminal to get the directory path rather than having to type it). For example, type something like ```~ username$ cd /Users/username/Documents/python_scripts``` into the mac Terminal.
-
-     * Determine the path to your properly formatted (see above) OTU table (e.g., /Users/username/Documents/project/otu_table_example.txt)
-
-     * Make sure that your computer is connected to the Internet, as the script will need to access the online database of taxonomic key words.
-
-     * Make a Python call on the script (remember you should have already used the change directory command to cd into the folder that contains the script) giving the proper OTU table path (the -otu argument), desired taxonomic database (the -db argument; either ‘fungi’ or ‘nematode’; the default ‘fungi’ will be used if you don’t signify the -db argument), and desired output (add the argument -m to also output an OTU table with just the OTUs for which functional assignments could be made and/or -u to output a table with only OTUs that could not be assigned; a table that includes both the assigned and unassigned OTUs is the default output). For example on a mac, you would type something like this ```python Guilds_v1.0.py -otu /Users/username/Documents/project/otu_table_example.txt -db fungi -m -u``` into the terminal. 
-
-     * Hit the enter/return key on your computer, and allow a few seconds for the script to do its magic!
-
-
-
-
+- Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).
