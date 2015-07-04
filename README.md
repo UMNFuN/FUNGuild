@@ -63,7 +63,7 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
 
 - Notes: Any other relevant information related to the taxon (e.g., "Facultative human pathogen causing coccidioidomycosis" for Coccidioides immitis, "Host - Arecaceae - Casuarinaceae, Palmae, Sapotaceae" for Xylaria obovata, or "Syn. Umbilicaria" for Actinogyra).
 
-- Citation/Source*: Publication, website, etc. from which the corresponding guild information was derived e.g.:
+- Citation/Source: Publication, website, etc. from which the corresponding guild information was derived. Data for taxa that is based on peer-reviewed publications is preferred. Formatting examples follow...
     
     Costa IPMW et al. 2012. Checklist of endophytic fungi from tropical regions. Mycotaxon 119:26
 
@@ -78,8 +78,6 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
     Outline of Ascomycota (http://www.fieldmuseum.org/myconet)
     
     http://www.apsnet.org/publications/commonnames/Pages/default.aspx
-    
-*Data for taxa that is based on peer-reviewed publications is preferred.
 
 
 TROUBLESHOOTING
