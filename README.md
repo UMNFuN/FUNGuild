@@ -43,15 +43,9 @@ RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
 
 CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
-- Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases (FUNGuild_db or NEMAGuild_db) by contacting the database curators (xerantheum@gmail.com or scott.thomas.bates@gmail.com), or via the online submission application (http://www.stbates.org/guilds/entry.php).
+Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases (FUNGuild_db or NEMAGuild_db) by contacting the database curators (xerantheum@gmail.com or scott.thomas.bates@gmail.com), or via the online submission application (http://www.stbates.org/guilds/entry.php). All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases. Taxon entries proposed for addition to the databases will be accessable once they have been reviewed by the database curators and migrated to the main database. Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
 
-- All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases.
-
-- Taxon entries proposed for addition to the databases will be accessable once they have been reviewed by the database curators and migrated to the main database.
-
-- Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
-
-Information should be entered into each Guilds database field, in sequence, as follows:
+<b>Information should be entered into each Guilds database field, in sequence, as follows:</b>
 
 - Taxon: The scientific name (e.g., Ganoderma).
 
@@ -86,7 +80,7 @@ Information should be entered into each Guilds database field, in sequence, as f
         http://www.apsnet.org/publications/commonnames/Pages/default.aspx
     
 *Data for taxa that is based on peer-reviewed publications is preferred.
-    
+
 
 TROUBLESHOOTING
 
