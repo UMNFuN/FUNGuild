@@ -51,45 +51,42 @@ CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
 
 - Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
 
-****
-
 Information should be entered into each Guilds database field, in sequence, as follows:
 
-    •    Taxon: The scientific name (e.g., Ganoderma).
+- Taxon: The scientific name (e.g., Ganoderma).
 
-    •    Taxon Level: A numeral corresponding the correct taxonomic level for the taxon (0 = keyword, 3 = Phylum, 4 = Subphylum, 5 = Class, 6 = Subclass, 7 = Order, 8 = Suborder, 9 = Family, 10 = Subfamily, 11 = Tribe, 12 = Subtribe, 13 = Genus, 15 = Subgenus, 16 = Section, 17 = Subsection, 18 = Series , 19 = Subseries, 20 = Species, 21 = Subspecies, 22 = Variety, 23 = Subvariety", 24 = Form, 25 = Subform, 26 = Form Species).
+- Taxon Level: A numeral corresponding the correct taxonomic level for the taxon (0 = keyword, 3 = Phylum, 4 = Subphylum, 5 = Class, 6 = Subclass, 7 = Order, 8 = Suborder, 9 = Family, 10 = Subfamily, 11 = Tribe, 12 = Subtribe, 13 = Genus, 15 = Subgenus, 16 = Section, 17 = Subsection, 18 = Series , 19 = Subseries, 20 = Species, 21 = Subspecies, 22 = Variety, 23 = Subvariety, 24 = Form, 25 = Subform, 26 = Form Species).
 
-    •    Trophic Mode: One of three trophic categories [pathotroph = receiving nutrients at the expense of the host cells and causing disease (e.g., biotroph, parasite, pathogen, etc.); saprotroph = receiving nutrients by breaking down dead host cells (e.g., wood rotters, litter rotters, etc.); symbiotroph = receiving nutrients by exchanging resources with host cells (e.g., ectomycorrhiza, lichens, etc.)]. The concepts presented here are similar to those of Tedersoo et al. 2014. Global diversity and geography of soil fungi. Science 346(6213). DOI: 10.1126/science.1256688 (http://www.sciencemag.org/content/346/6213/1256688).
+- Trophic Mode: One of three trophic categories [pathotroph = receiving nutrients at the expense of the host cells and causing disease (e.g., biotroph, parasite, pathogen, etc.); saprotroph = receiving nutrients by breaking down dead host cells (e.g., wood rotters, litter rotters, etc.); symbiotroph = receiving nutrients by exchanging resources with host cells (e.g., ectomycorrhiza, lichens, etc.)]. The concepts presented here are similar to those of Tedersoo et al. 2014. Global diversity and geography of soil fungi. Science 346(6213). DOI: 10.1126/science.1256688 (http://www.sciencemag.org/content/346/6213/1256688).
 
-    •    Guild: Provide a relevant guild descriptor (e.g., "Algal Parasite", "Animal Gut", "Animal Pathogen", "Arbuscular Mycorrhizal", "Coprophilous", "Dark Septate Endophyte", "Ectomycorrhizal", "Endophyte", "Foliar Endophyte", "Ericoid Mycorrhizal", "Litter Saprotroph", "Lichenicolous", "Lichenized", "Musicolous", "Mycoparasite", "Plant Pathogen", "Soil Saprotroph", "Undefined Saprotroph", "Wood Saprotroph", etc.). New guilds can be erected if necessary.
+- Guild: Provide a relevant guild descriptor (e.g., "Algal Parasite", "Animal Gut", "Animal Pathogen", "Arbuscular Mycorrhizal", "Coprophilous", "Dark Septate Endophyte", "Ectomycorrhizal", "Endophyte", "Foliar Endophyte", "Ericoid Mycorrhizal", "Litter Saprotroph", "Lichenicolous", "Lichenized", "Musicolous", "Mycoparasite", "Plant Pathogen", "Soil Saprotroph", "Undefined Saprotroph", "Wood Saprotroph", etc.). New guilds can be erected if necessary.
 
-    •    Confidence Ranking: "Highly Probable" (= absolutely certain), "Probable" (= fairly certain), "Possible" (= suspected but not proven, conflicting reports given, etc.).
+- Confidence Ranking: "Highly Probable" (= absolutely certain), "Probable" (= fairly certain), "Possible" (= suspected but not proven, conflicting reports given, etc.).
 
-    •    Growth Form: A basic morphological category such as "Agaricoid", "Boletoid", "Clavarioid", "Cup Fungus", "Facultative Yeast", "Gasteroid", "Hydnoid", " Jelly Fungus", "Phalloid", "Polyporoid", "Pyrenomycete", "Resupinate", "Rust", "Secotioid", "Smut", "Yeast", or "Thallus" should be noted.
+- Growth Form: A basic morphological category such as "Agaricoid", "Boletoid", "Clavarioid", "Cup Fungus", "Facultative Yeast", "Gasteroid", "Hydnoid", " Jelly Fungus", "Phalloid", "Polyporoid", "Pyrenomycete", "Resupinate", "Rust", "Secotioid", "Smut", "Yeast", or "Thallus" should be noted.
 
-    •    Trait: Other functional or morphological traits such as "Brown Rot", "Hypogeous", "Poisonous", "White Rot" or "Contact Exploration Type" would be appropriate for this field.
+- Trait: Other functional or morphological traits such as "Brown Rot", "Hypogeous", "Poisonous", "White Rot" or "Contact Exploration Type" would be appropriate for this field.
 
-    •    Notes: Any other relevant information related to the taxon (e.g., "Facultative human pathogen causing coccidioidomycosis" for Coccidioides immitis, "Host - Arecaceae - Casuarinaceae, Palmae, Sapotaceae" for Xylaria obovata, or "Syn. Umbilicaria" for Actinogyra).
+- Notes: Any other relevant information related to the taxon (e.g., "Facultative human pathogen causing coccidioidomycosis" for Coccidioides immitis, "Host - Arecaceae - Casuarinaceae, Palmae, Sapotaceae" for Xylaria obovata, or "Syn. Umbilicaria" for Actinogyra).
 
-    •    Citation/Source: Publication, website, etc. from which the corresponding guild information was derived e.g.:
+- Citation/Source*: Publication, website, etc. from which the corresponding guild information was derived e.g.:
     
-            Costa IPMW et al. 2012. Checklist of endophytic fungi from tropical regions. Mycotaxon 119:26
+    Costa IPMW et al. 2012. Checklist of endophytic fungi from tropical regions. Mycotaxon 119:26
+
+    Esslinger TL. 2014. North Dakota State University (http://www.ndsu.edu/pubweb/~esslinge/chcklst/chcklst7.htm)
     
-            Esslinger TL. 2014. North Dakota State University (http://www.ndsu.edu/pubweb/~esslinge/chcklst/chcklst7.htm)
+        James TY et al. 2006. Nature 443:818-822
+   
+        Kurtzman CP, Fell JW, Boekhout T eds. 2011. The Yeasts, a Taxonomic Study. Fifth Edition. Vols 1-3. Elsevier, San Diego
+
+        Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20:217-263
+ 
+        Outline of Ascomycota (http://www.fieldmuseum.org/myconet)
+        
+        http://www.apsnet.org/publications/commonnames/Pages/default.aspx
     
-            James TY et al. 2006. Nature 443:818-822
+*Data for taxa that is based on peer-reviewed publications is preferred.
     
-            Kurtzman CP, Fell JW, Boekhout T eds. 2011. The Yeasts, a Taxonomic Study. Fifth Edition. Vols 1-3. Elsevier, San Diego
-    
-            Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20:217-263
-    
-            Outline of Ascomycota (http://www.fieldmuseum.org/myconet)
-    
-            http://www.apsnet.org/publications/commonnames/Pages/default.aspx
-    
-    *Data for taxa that is based on peer-reviewed publications is preferred.
-    
-****
 
 TROUBLESHOOTING
 
