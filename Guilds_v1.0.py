@@ -97,13 +97,13 @@ with open(otu_file, 'rU') as f1:
 dot_position = [i for i in range(len(otu_file)) if otu_file.startswith('.', i)] #Get the position of . in the input filename
 
 if not dot_position: #the file does not have extension
-	matched_file = args.otu + '.matched.txt'
-	unnmatched_file = args.otu + '.unmatched.txt'
-	total_file = args.otu + '.function.txt'
+	matched_file = args.otu + '.guilds_matched.txt'
+	unnmatched_file = args.otu + '.guilds_unmatched.txt'
+	total_file = args.otu + '.guilds.txt'
 else:
-	matched_file = args.otu[:dot_position[-1]] + '.matched.txt'
-	unmatched_file = args.otu[:dot_position[-1]] + '.unmatched.txt'
-	total_file = args.otu[:dot_position[-1]] + '.function.txt'
+	matched_file = args.otu[:dot_position[-1]] + '.guilds_matched.txt'
+	unmatched_file = args.otu[:dot_position[-1]] + '.guilds_unmatched.txt'
+	total_file = args.otu[:dot_position[-1]] + '.guilds.txt'
 ###########################################################################################
 
 # Import Function Database from GitHub, and get it ready.##################################
