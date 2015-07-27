@@ -90,8 +90,9 @@ otu_file = args.otu
 #Detect delimiter in the input file
 with open(otu_file, 'rU') as f1:
     dialect = csv.Sniffer().sniff(f1.read())
-    f1.seek(0)
     otu_delimiter = dialect.delimiter
+	if otu_delimiter == ';':
+		out_delimiter = '\t'
 
 #output files
 dot_position = [i for i in range(len(otu_file)) if otu_file.startswith('.', i)] #Get the position of . in the input filename
