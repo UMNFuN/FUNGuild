@@ -192,8 +192,14 @@ with open(otu_file, 'rU') as otu:
 for item in header_database:
 	header.append(item)
 
+#look for Taxonomy or taxonomy
+if 'taxonomy' in header:
+    lookup = 'taxonomy'
+elif 'Taxonomy' in header:
+    lookup = 'Taxonomy'
+
 # get the positions of the taxonomy column and Notes column
-index_tax = header.index('taxonomy')
+index_tax = header.index(lookup)
 index_notes = header.index('Notes')
 
 #Abort if the column 'taxonomy' is not found
