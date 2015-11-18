@@ -215,7 +215,7 @@ with open(otu_file, 'rU') as otu:
 	for record in otu:
 		otu_current = record.split(otu_delimiter)
 		otu_taxonomy = otu_current[index_tax].rstrip('\n')
-		replace_list = ['_',' ',';',',']
+		replace_list = ['_', ' ', ';', ',', ':']
 		for symbol in replace_list:
 			otu_taxonomy = otu_taxonomy.replace(symbol, '@')
 		otu_taxonomy = otu_taxonomy + '@'
