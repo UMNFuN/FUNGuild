@@ -7,6 +7,9 @@ Databases:<br>
 http://stbates.org/funguild_db.php<br>
 http://stbates.org/nemaguild_db.php
 
+Citation:<br>
+Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kennedy PG. In Press. FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. Fungal Ecology.<br> (http://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b_1.pdf)
+
 ****
 
 GENERAL NOTES
