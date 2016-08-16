@@ -7,7 +7,7 @@ Databases:<br>
 http://stbates.org/funguild_db.php<br>
 http://stbates.org/nemaguild_db.php
 Api:<br>
-http://www.stbates.org/guilds/services/api/query.php?qField=NAME OF DESIRED FIELD&qText=QUERY TEXT
+"http://www.stbates.org/guilds/services/api/query.php?qField=NAME OF DESIRED FIELD&qText=QUERY TEXT"
 e.g., http://www.stbates.org/guilds/services/api/query.php?qField=taxon&qText=Tulostoma
 <br>
 Citation:<br>
