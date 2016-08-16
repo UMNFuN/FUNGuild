@@ -6,7 +6,8 @@ http://funguild.org<br>
 Databases:<br>
 http://stbates.org/funguild_db.php<br>
 http://stbates.org/nemaguild_db.php
-
+Api:<br>
+http://www.stbates.org/guilds/services/api/query.php?qField=<NAME OF DESIRED FIELD>&qText=<QUERY TEXT>
 Citation:<br>
 Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kennedy PG. In Press. FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. Fungal Ecology.<br> (http://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b_1.pdf)
 
@@ -56,7 +57,7 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
 
 - Trophic Mode: One of three trophic categories [pathotroph = receiving nutrients at the expense of the host cells and causing disease (e.g., biotroph, parasite, pathogen, etc.); saprotroph = receiving nutrients by breaking down dead host cells (e.g., wood rotters, litter rotters, etc.); symbiotroph = receiving nutrients by exchanging resources with host cells (e.g., ectomycorrhiza, lichens, etc.)]. The concepts presented here are similar to those of Tedersoo et al. 2014. Global diversity and geography of soil fungi. Science 346(6213). DOI: 10.1126/science.1256688 (http://www.sciencemag.org/content/346/6213/1256688).
 
-- Guild: Provide a relevant guild descriptor (e.g., "Algal Parasite", "Animal Gut", "Animal Pathogen", "Arbuscular Mycorrhizal", "Coprophilous", "Dark Septate Endophyte", "Ectomycorrhizal", "Endophyte", "Foliar Endophyte", "Ericoid Mycorrhizal", "Litter Saprotroph", "Lichenicolous", "Lichenized", "Musicolous", "Mycoparasite", "Plant Pathogen", "Soil Saprotroph", "Undefined Saprotroph", "Wood Saprotroph", etc.). New guilds can be erected if necessary.
+- Guild: Provide a relevant guild descriptor (e.g., "Algal Parasite", "Animal Gut Fungus", "Animal Pathogen", "Arbuscular Mycorrhizal", "Dark Septate Endophyte", "Dung Saprotroph", "Ectomycorrhizal", "Endophyte", "Foliar Endophyte", "Ericoid Mycorrhizal", "Litter Saprotroph", "Lichenicolous", "Lichenized", "Musicolous", "Mycoparasite", "Plant Pathogen", "Soil Saprotroph", "Undefined Saprotroph", "Wood Saprotroph", etc.). New guilds can be erected if necessary.
 
 - Confidence Ranking: "Highly Probable" (= absolutely certain), "Probable" (= fairly certain), "Possible" (= suspected but not proven, conflicting reports given, etc.).
 
