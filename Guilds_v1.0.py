@@ -70,6 +70,7 @@ import sys
 import urllib
 from operator import itemgetter
 import csv
+import ast
 
 start = timeit.default_timer()
 ################################
@@ -122,32 +123,34 @@ function_file = 'temp_db.txt' #temp file to store database file
 temp = 'temp.txt'
 urllib.urlretrieve(url, temp)
 
-f = open(temp,'rU')
-data = f.read()
-f.close()
-
+temp_content = []
+with open(temp, 'rU') as f:
+    for line in f:
+        temp_content.append(line)
 os.remove(temp)
 
-new_data = data.split("} , {")
+split_data = temp_content[6][2:-10].split("} , {")
 
-#Fix the first and last record
-new_data[0] = new_data[0][3:]
-new_data[-1]=new_data[-1][:-3]
+#Divide the record by line
+records = []
+records.append(split_data[0] + '}')
+for record in split_data[1:-1]:
+    record = '{' + record + '}'
+    records.append(record)
+records.append('{' + split_data[-1])
 
 #Parse the record
 parse_data = []
-for line in new_data:
-    record = line
-    rec = record.split(" , ")
-    del rec[0]
-
+lookup_terms = ['taxon','taxonomicLevel','trophicMode','guild','growthForm','trait','confidenceRanking','confidenceRanking','notes','citationSource']
+for line in records:
+    current = ast.literal_eval(line)
     current_rec = []
-    for item in rec:
-        p = item.find(":")
-        current_rec.append(item[p+2:].replace('"',''))
+
+    for term in lookup_terms:
+        current_rec.append(current[term])
     parse_data.append(current_rec)
 
-header = "Taxon\tTaxon Level\tTrophic Mode\tGuild\tConfidence Ranking\tGrowth Morphology\tTrait\tNotes\tCitation/Source"
+header = "Taxon\tTaxon Level\tTrophic Mode\tGuild\tGrowth Morphology\tTrait\tConfidence Ranking\tNotes\tCitation/Source"
 
 f = open(function_file,'a')
 f.write("%s\n" %(header))
