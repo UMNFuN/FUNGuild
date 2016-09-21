@@ -87,7 +87,7 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
 
 
 
-TROUBLESHOOTING
+<a name="troubleshooting">TROUBLESHOOTING</a>
 
 <b>Formatting:</b> The python script expects a standard OTU table as input, and it is critical that this is formatted correctly before running the script. A typical OTU table in the text file format will look something like this:
 
