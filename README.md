@@ -89,7 +89,7 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
 
 <a name="troubleshooting">TROUBLESHOOTING</a>
 
-<b>Formatting:</b> The python script expects a standard OTU table as input, and it is critical that this is formatted correctly before running the script. A typical OTU table in the text file format will look something like this:
+<b>Formatting:</b> The python script expects a standard OTU table as input (<i><a href="http://biom-format.org/documentation/biom_conversion.html" target="_blank">click here</a></i> for a converting biom files to OTU tables in qiime), and it is critical that this is formatted correctly before running the script. A typical OTU table in the text file format will look something like this:
 
 OTU_ID(tab)sample1(tab)sample2(tab)sample3(tab)taxonomy(return)
 OTU_10(tab)10002(tab)10004(tab)0(tab)Fungi;Basidiomycota;Agaricales;Cortinariaceae;Cortinarius(return)
