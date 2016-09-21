@@ -47,7 +47,7 @@ RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
 - Hit the enter/return key on your computer, and allow a few seconds for the script to do its magic!
 
 
-CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE
+<a name="contributing">CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE</a>
 
 Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases (FUNGuild_db or NEMAGuild_db) by contacting the database curators (xerantheum@gmail.com or scott.thomas.bates@gmail.com), or via the online submission application (http://www.stbates.org/guilds/entry.php). All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases. Taxon entries proposed for addition to the databases will be accessable once they have been reviewed by the database curators and migrated to the main database. Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
 
