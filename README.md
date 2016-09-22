@@ -25,7 +25,7 @@ An online version of the Guilds bioinformatic tool, the 'assignment application'
 
 http://funguild.org
 
-An example OTU table has been provided in the FUNGuild GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) to demonstrate table formatting.
+An example OTU table file to demonstrate formatting can be found <a href='www.stbates.org/guilds/download_examples.php/?download_file=otu_table_example.txt'><i>here</i></a>.
 
 
 RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
@@ -49,7 +49,7 @@ RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
 
 <a name="contributing">CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE</a>
 
-Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases (FUNGuild_db or NEMAGuild_db) by contacting the database curators (xerantheum@gmail.com or scott.thomas.bates@gmail.com), or via the online submission application (http://www.stbates.org/guilds/entry.php). All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases. Taxon entries proposed for addition to the databases will be accessable once they have been reviewed by the database curators and migrated to the main database. Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
+Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases (FUNGuild_db or NEMAGuild_db) by contacting the database curators (xerantheum@gmail.com or scott.thomas.bates@gmail.com), or via the online submission application (http://www.stbates.org/guilds/entry.php - for formatting, <a href='www.stbates.org/guilds/download_examples.php/?download_file=otu_db_upload_example.txt'><i>click here</i></a> to see an example of an upload .txt file). All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases. Taxon entries proposed for addition to the databases will be accessable once they have been reviewed by the database curators and migrated to the main database. Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
 
 <b>Information should be entered into each Guilds database field, in sequence, as follows:</b>
 
@@ -95,7 +95,7 @@ OTU_ID(tab)sample1(tab)sample2(tab)sample3(tab)taxonomy(return)
 OTU_10(tab)10002(tab)10004(tab)0(tab)Fungi;Basidiomycota;Agaricales;Cortinariaceae;Cortinarius(return)
 OTU_20(tab)10003(tab)0(tab)10001(tab)Fungi;Ascomycota;Chaetothyriales;Herpotrichiellaceae;Cladophialophora
 
-You can consult this GitHub repository (https://github.com/UMNFuN/FUNGuild/blob/master/otu_table_example.txt) for a more complete OTU file example.
+Consult the example OTU table file for a more complete OTU file formatting representation <a href='www.stbates.org/guilds/download_examples.php/?download_file=otu_table_example.txt'><i>here</i></a>.
 
 Common errors include the following (move down through this list as needed, more critical errors are at the top of the list):
 
