@@ -11,7 +11,7 @@ api url = http://www.stbates.org/guilds/services/api/<br>
 api url + query.php?qField=NAME OF DESIRED FIELD&qText=QUERY TEXT"<br>
 e.g., http://www.stbates.org/guilds/services/api/query.php?qField=taxon&qText=Tulostoma<br>
 Citation:<br>
-Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kennedy PG. In Press. FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. Fungal Ecology.<br> (http://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b_1.pdf)
+Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kennedy PG. 2016. FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. Fungal Ecology 20:241–248.<br> (http://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b_1.pdf)
 
 ****
 
