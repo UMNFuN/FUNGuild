@@ -31,6 +31,8 @@ optional arguments:
   		   for which functional assignments have been made
   -u, --unmatched  Ask the script to output an otu table containing only OTUs
   		   for which functional assignments could not be made
+  -s, --sort       Sort rows in descending order by the sum of numeric values
+                   found.
   
 This is an example command to run this script:
 python Guilds_v1.0.py -otu user_otu_table.txt
@@ -83,6 +85,7 @@ parser.add_argument("-otu", help="Path and file name of the OTU table. The scrip
 parser.add_argument("-m", "--matched", action="store_true", help="Ask the script to output a otu table with function assigned OTUs") 
 parser.add_argument("-u", "--unmatched", action="store_true", help="Ask the script to output a otu table with function assigned OTUs")
 parser.add_argument("-db", choices=['fungi','nematode'], default='fungi', help="Assign a specified database to the script")
+parser.add_argument("-s", "--sort", action="store_true", help="Sort rows in descending order by the sum of numeric values found")
 args = parser.parse_args()
 
 #input files
@@ -161,7 +164,7 @@ f.close()
 f_database = open(function_file, 'r') # Open the database file.
 for line in f_database:
 	if line.find('Taxon') != -1: #Search for the line that contains the header (if it is not the first line)
-		header_database = line.split('\t')
+		header_database = line.rstrip('\n').split('\t')
 		break
 f_database.close()
 
@@ -214,8 +217,8 @@ if index_tax == -1:
 with open(otu_file, 'rU') as otu:
 	otu_tab = []    
 	for record in otu:
-		otu_current = record.split(otu_delimiter)
-		otu_taxonomy = otu_current[index_tax].rstrip('\n')
+		otu_current = record.rstrip('\n').split(otu_delimiter)
+		otu_taxonomy = otu_current[index_tax]
 		replace_list = ['_', ' ', ';', ',', ':']
 		for symbol in replace_list:
 			otu_taxonomy = otu_taxonomy.replace(symbol, '@')
@@ -245,7 +248,7 @@ for record in f_database:
     else: t = 0
     
     # Compare database with the OTU table
-    function_tax = record.split('\t')
+    function_tax = record.rstrip('\n').split('\t')
     search_term = function_tax[0].replace(' ', '@') #first column of database, contains the name of the species
     search_term = '@' + search_term + '@' #Add @ to the search term
 
@@ -299,7 +302,8 @@ for new_rec in unique_list:
         if new_rec[0] == rec[0]:
             new_rec[index_tax] = rec[index_tax]
 #Sort the new otu table by the total sequence number of each OTU.
-unique_list.sort(key=lambda x: float(sum(map(float,x[1:index_tax]))), reverse=True)
+if (args.sort):
+  unique_list.sort(key=lambda x: float(sum(map(float,x[1:index_tax]))), reverse=True)
 ################################################################################################
 
 #Write to output files##############################################################################
@@ -309,12 +313,12 @@ if args.matched:
 		os.remove(matched_file)
 	output = open(matched_file,'a')
 	#Write the matched list header
-	output.write('%s' % ('\t'.join(header))) #Header
+	output.write('%s\n' % ('\t'.join(header))) #Header
 
 	#Write the matched OTU table
 	for item in unique_list:
 		rec = '\t'.join(item)    
-		output.write('%s' % rec)
+		output.write('%s\n' % rec)
 	output.close()
 
 #Output unmatched OTUs to a new file
@@ -341,7 +345,7 @@ if args.unmatched:
 	if os.path.isfile(unmatched_file) == True: 
 		os.remove(unmatched_file)
 	output_unmatched = open(unmatched_file, 'a')
-	output_unmatched.write('%s' % ('\t'.join(header)))		
+	output_unmatched.write('%s\n' % ('\t'.join(header)))
 	for item in unmatched_list:
 		rec = '\t'.join(item)
 		output_unmatched.write('%s\n' % rec)
@@ -353,14 +357,15 @@ if os.path.isfile(total_file) == True:
 	os.remove(total_file)
 
 total_list = unique_list + unmatched_list #Combine the two OTU tables
-total_list.sort(key=lambda x: float(sum(map(float,x[1:index_tax]))), reverse=True) #Sorted the combined OTU table
+if args.sort:
+  total_list.sort(key=lambda x: float(sum(map(float,x[1:index_tax]))), reverse=True) #Sorted the combined OTU table
 
 output_total = open(total_file, 'a')
-output_total.write('%s' % ('\t'.join(header)))
+output_total.write('%s\n' % ('\t'.join(header)))
 
 count_total = 0
 for item in total_list:
-	rec = ('\t'.join(item)).strip('\n')
+	rec = '\t'.join(item)
 	output_total.write('%s\n' % rec)
 	count_total += 1
 output_total.close()
@@ -383,3 +388,4 @@ stop = timeit.default_timer()
 runtime = round((stop-start),2)
 print "\nTotal calculating time: {} seconds.".format(runtime)
 ####################################################################################################################
+
