@@ -139,7 +139,7 @@ records.append('{' + split_data[-1])
 
 #Parse the record
 parse_data = []
-lookup_terms = ['taxon','taxonomicLevel','trophicMode','guild','growthForm','trait','confidenceRanking','confidenceRanking','notes','citationSource']
+lookup_terms = ['taxon','taxonomicLevel','trophicMode','guild','growthForm','trait','confidenceRanking','notes','citationSource']
 for line in records:
     current = ast.literal_eval(line)
     current_rec = []
