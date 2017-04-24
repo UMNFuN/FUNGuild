@@ -153,7 +153,7 @@ header = "Taxon\tTaxon Level\tTrophic Mode\tGuild\tGrowth Morphology\tTrait\tCon
 f = open(function_file,'a')
 f.write("%s\n" %(header))
 for item in parse_data:
-    f.write("%s\n" %("\t".join(item)))
+    f.write("%s\n" %("\t".join([str(i) for i in item])))
 f.close()
 
 
