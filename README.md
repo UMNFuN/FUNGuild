@@ -1,7 +1,7 @@
 
 <h1>FUNGuild: Fungi + fUNctional + Guild</h1>
 
-><i><b>Over 11,000 fungal taxa now included in the database</b></i>!
+<b><i>Over 11,000 fungal taxa now included in the database</i>!</b>
 
 Online version:<br>
 http://funguild.org<br>
@@ -111,7 +111,7 @@ Common errors include the following (move down through this list as needed, more
 
 - <b>Quoted characters</b>. Programs (e.g., Microsoft Excel) that create 'Tab Delimited Text' and 'Comma Separated Values' (.csv) files typically use quotation marks to 'protect' certain characters (e.g, commas) when used in text (e.g., ...Oligochaeta;Stylaria;Stylaria_sp._aguinaldo,_1997) as they have the potential to be misread (e.g., causing a column split in a .csv file between 'aguinaldo' and '_1997'). To correct this issue, make sure that taxa in the taxonomic strings are separated with a semicolon (e.g., ...Ustilaginomycotina;Ustilago;Ustilago_maydis) rather than a comma and remove all commas from the text portion of the string (e.g., ...Oligochaeta;Stylaria;Stylaria_sp._aguinaldo_1997). After you have made this correction, you may also need to clear any quotation marks from your OTU table. Do this by opening the file in a text editor and then delete all the quotation marks (i.e., use the find/replace function to replace all quotes '"' with a blank '' - as in nothing, not a space - see note below).
 
-- <b>Extra spaces</b>. Spaces can cause problems when a file is being read into a program, this is why they are typically replaced with an underscore in the taxonomic strings (e.g., 'Stylaria_sp.' in the above example). To correct this issue, open the OTU table in a text editor and remove space gaps (i.e., gaps that consist of more than a single space), and then clear all of the spaces (i.e., use the find/replace function to replace all spaces ' ' with an underscore '_').
+- <b>Extra spaces</b>. Spaces can cause problems when a file is being read into a program, this is why they are typically replaced with an underscore in the taxonomic strings (e.g., 'Stylaria_sp.' in the above example). To correct this issue, open the OTU table in a text editor and remove space gaps (i.e., gaps that consist of more than a single space), and then clear all of the spaces (i.e., use the find/replace function to replace all spaces ' ' with an underscore '_'). Note: blank spaces in the file name can also cause problems for the FunGuild online version, so spaces in input file names should likewise be replaced by underscores (e.g., otu table.txt should be changed to otu_table.txt).
 
 <b>Online version of the script:</b> The online Guilds_v1.0.py application (http://www.stbates.org/guilds/app.php) calls the python code from php when the 'Begin Analysis' button is 'pushed'. This application should work well for properly formatted (see above) OTU tables of a smaller file size (e.g., less than 25MB). There is a well known issue with php page time outs for processes that take a long time (read: more than the php default of 30 seconds). The script runs quickly, typically just a few seconds, but server handling of large files (e.g., loading them through your browser) can take time. To allow time for script processes to complete, the php 'max_execution_time' has been set to 0 (i.e., no time limit). Even though removing this restriction should allow time for processes to complete, large files can cause other problems that will trip a 500 'Internal Server Error' flag.
 
@@ -123,4 +123,4 @@ When working with large OTU table files, consider the following:
 
 <b>Contributors:</b> Michelle Afkhami, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Romina Gazis, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, and Amy Zanne
 
-<b>Powered by: </b>![alt text](https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/MLab_company_logo.svg/1280px-MLab_company_logo.svg.png)
+<b>Powered by: </b>![alt text](http://www.stbates.org/images/mlab_logo.png)
