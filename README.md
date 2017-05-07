@@ -123,4 +123,5 @@ When working with large OTU table files, consider the following:
 
 <b>Contributors:</b> Michelle Afkhami, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Romina Gazis, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, and Amy Zanne
 
-<b>Powered by: </b>![alt text](http://www.stbates.org/images/mlab_logo.png)
+<b>Powered by: </b>
+![alt text](http://www.stbates.org/images/mlab_logo.png)
