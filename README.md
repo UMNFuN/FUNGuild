@@ -1,6 +1,8 @@
 
 <h1>FUNGuild: Fungi + fUNctional + Guild</h1>
 
+><i><b>Over 11,000 fungal taxa now included in the database</b></i>!
+
 Online version:<br>
 http://funguild.org<br>
 Databases:<br>
@@ -57,9 +59,9 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
 
 - Taxon Level: A numeral corresponding the correct taxonomic level for the taxon (0 = keyword, 3 = Phylum, 4 = Subphylum, 5 = Class, 6 = Subclass, 7 = Order, 8 = Suborder, 9 = Family, 10 = Subfamily, 11 = Tribe, 12 = Subtribe, 13 = Genus, 15 = Subgenus, 16 = Section, 17 = Subsection, 18 = Series , 19 = Subseries, 20 = Species, 21 = Subspecies, 22 = Variety, 23 = Subvariety, 24 = Form, 25 = Subform, 26 = Form Species).
 
-- Trophic Mode: One of three trophic categories [pathotroph = receiving nutrients at the expense of the host cells and causing disease (e.g., biotroph, parasite, pathogen, etc.); saprotroph = receiving nutrients by breaking down dead host cells (e.g., wood rotters, litter rotters, etc.); symbiotroph = receiving nutrients by exchanging resources with host cells (e.g., ectomycorrhiza, lichens, etc.)]. The concepts presented here are similar to those of Tedersoo et al. 2014. Global diversity and geography of soil fungi. Science 346(6213). DOI: 10.1126/science.1256688 (http://www.sciencemag.org/content/346/6213/1256688).
+- Trophic Mode: One of three trophic categories [Pathotroph = receiving nutrients at the expense of the host cells and causing disease (e.g., biotroph, parasite, pathogen, etc.); Saprotroph = receiving nutrients by breaking down dead host cells (e.g., wood rotters, litter rotters, etc.); Symbiotroph = receiving nutrients by exchanging resources with host cells (e.g., ectomycorrhiza, lichens, etc.)]. The concepts presented here are similar to those of Tedersoo et al. 2014. Global diversity and geography of soil fungi. Science 346(6213). DOI: 10.1126/science.1256688 (http://www.sciencemag.org/content/346/6213/1256688).
 
-- Guild: Provide a relevant guild descriptor (e.g., "Algal Parasite", "Animal Gut Fungus", "Animal Pathogen", "Arbuscular Mycorrhizal", "Dark Septate Endophyte", "Dung Saprotroph", "Ectomycorrhizal", "Endophyte", "Foliar Endophyte", "Ericoid Mycorrhizal", "Litter Saprotroph", "Lichenicolous", "Lichenized", "Musicolous", "Mycoparasite", "Plant Pathogen", "Soil Saprotroph", "Undefined Saprotroph", "Wood Saprotroph", etc.). New guilds can be erected if necessary.
+- Guild: Provide a relevant guild descriptor [Pathotroph: Animal Pathogen (e.g., human pathogens - typically annoated as such), Bryophyte Parasite, Fungal Parasite, Lichen Parasite, Plant Pathogen; Saprotroph: Dung Saprotroph (i.e., coprophilous), Plant Saprotroph (e.g., leaf litter decomposer), Soil Saprotroph (e.g., rhizosphere saprobe - typically annoated as a rhizosphere fungus), Undefined Saprotroph (e.g., a general saprobe, or in cases where the ecology is not known, but suspected to be a saprobe), Wood Saprotroph (e.g., wood rotting fungi); Symbiotroph: Ectomycorrhizal, Ericoid Mycorrhizal, Endophyte, Epiphyte, Lichenized (i.e., lichen)]. New guilds can be erected if necessary.
 
 - Confidence Ranking: "Highly Probable" (= absolutely certain), "Probable" (= fairly certain), "Possible" (= suspected but not proven, conflicting reports given, etc.).
 
@@ -118,3 +120,7 @@ When working with large OTU table files, consider the following:
 - Zip OTU tables of a larger file size (e.g., over 10MB) before loading them onto the server. This approach has been tested with larger files and seems to be in working order; however, processing time is slowed considerably (which shouldn't be an issue for php page time outs - see above). You can always try larger OTU table sizes (up to 50MB when zipped), but a great deal of patience may be required. This being said, it is recommended that you use a local version of the program run from the command line to run the script (see below).
 
 - Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).
+
+<b>Contributors:</b> Michelle Afkhami, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Romina Gazis, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, and Amy Zanne
+
+<b>Powered by: </b>![alt text](https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/MLab_company_logo.svg/1280px-MLab_company_logo.svg.png)
