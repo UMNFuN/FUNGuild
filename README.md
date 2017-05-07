@@ -65,7 +65,7 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
 
 - Confidence Ranking: "Highly Probable" (= absolutely certain), "Probable" (= fairly certain), "Possible" (= suspected but not proven, conflicting reports given, etc.).
 
-- Growth Form: Basic morphological categories include - "Agaricoid", "Boletoid", "Clathroid", "Clavarioid", "Corticioid", "Facultative Yeast", "Gasteroid", "Hydnoid", "Microfungus", "Phalloid", "Polyporoid", "Rust", "Secotioid", "Smut", "Thallus", or "Yeast" should be noted.
+- Growth Form: Basic morphological categories including "Agaricoid", "Boletoid", "Clathroid", "Clavarioid", "Corticioid", "Facultative Yeast", "Gasteroid", "Hydnoid", "Microfungus", "Phalloid", "Polyporoid", "Rust", "Secotioid", "Smut", "Thallus", or "Yeast" should be noted.
 
 - Trait: Other functional or morphological traits such as "Brown Rot", "Hypogeous", "Poisonous", "Soft Rot", "White Rot" or "Contact Exploration Type" would be appropriate for this field.
 
