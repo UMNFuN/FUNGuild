@@ -35,7 +35,11 @@ An example OTU table .txt file to demonstrate formatting can be found <a href='h
 
 RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
 
-- Make sure you local computer has Python 2. installed (see https://www.python.org/downloads/).
+- Make sure you local computer has Python installed. Our current version of script support Python version higher than 2.7. We recommand that you install the Anaconda Python distribution for all required dependencies. Python 3.6 is prefered for its better support of Unicode characters (see https://www.python.org/downloads/).
+
+- We use the Python package 'requests' for connecting with the FUNGuild database. This package should come with most of the common Python distributions. If you somehow don't have this package in your Python, you can install it using 
+    
+    pip install requests
 
 - Download or copy the Guilds python script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/Guilds_v1.1.py). The script should be saved in a file with the .py extension (e.g., Guilds_v1.1.py) rather than .txt (make sure that the hide extension setting is not activated, as the file might then actually save as e.g., Guilds_v1.1.py.txt).
 
