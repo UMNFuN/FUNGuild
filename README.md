@@ -1,4 +1,3 @@
-
 <h1>FUNGuild: Fungi + fUNctional + Guild</h1>
 
 <b><i>Over 11,000 fungal taxa now included in the database</i>!</b>
@@ -36,9 +35,9 @@ An example OTU table .txt file to demonstrate formatting can be found <a href='h
 
 RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
 
-- Make sure you local computer has Python 2 installed (see https://www.python.org/downloads/).
+- Make sure you local computer has Python 2. installed (see https://www.python.org/downloads/).
 
-- Copy the Guilds python script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/Guilds_v1.0.py), paste it into a text file, and save it with the .py extension (e.g., Guilds_v1.0.py) rather than .txt (make sure that the hide extension setting is not activated, as the file might then actually save as e.g., Guilds_v1.0.py.txt).
+- Download or copy the Guilds python script (https://raw.githubusercontent.com/UMNFuN/FUNGuild/master/Guilds_v1.1.py). The script should be saved in a file with the .py extension (e.g., Guilds_v1.1.py) rather than .txt (make sure that the hide extension setting is not activated, as the file might then actually save as e.g., Guilds_v1.1.py.txt).
 
 - Open a terminal to run the script via command line (e.g., /Applications/Utilities/ and click on 'Terminal' for mac OR for Windows use Start or Start Menu and search for 'command' or 'cmd' and then click on the 'Command Prompt' icon). Be sure to follow any conventions (e.g., directory path formatting) that are relevant to your particular operating system.
 
