@@ -242,8 +242,6 @@ for function_tax in f_database:
             otu_redundant.append(otu_new)
 
 # Finish searching, delete the temp function database file
-if os.path.isfile('temp_db.txt') == True:
-	os.remove('temp_db.txt')
 
 print("")
 print("Found %i matching taxonomy records in the database."%(count))
@@ -342,11 +340,13 @@ with open(total_file, 'w') as f:
     f.write('%s' % ('\t'.join(header)))
     for line in total_list:
         try:
-            line[-1] = line[-1].encode('utf-8')
+            #line[-1] = line[-1].encode('utf-8')
             output_line = '\t'.join([str(i) for i in line])
         except UnicodeEncodeError:
-            print("This record has unsupported Unicode, please report to the develop team.")
-            print(line)
+            #print("This record has unsupported Unicode, please report to the develop team.")
+            output_line = '\t'.join([str(i) for i in line[:-1]])
+        except AttributeError:
+            output_line = '\t'.join([str(i) for i in line[:-1]])
         count_total += 1
         f.write('%s\n' % output_line)
 
