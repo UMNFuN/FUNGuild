@@ -337,7 +337,7 @@ total_list.sort(key=lambda x: float(sum(map(float,x[1:index_tax]))), reverse=Tru
 count_total = 0
 #print(total_list)
 with open(total_file, 'w') as f:
-    f.write('%s' % ('\t'.join(header)))
+    f.write('%s\n' % ('\t'.join(header)))
     for line in total_list:
         try:
             #line[-1] = line[-1].encode('utf-8')
