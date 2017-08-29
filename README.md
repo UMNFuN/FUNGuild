@@ -2,25 +2,33 @@
 
 <b><i>Over 11,000 fungal taxa now included in the database</i>!</b>
 
-Online version:<br>
+<b>Online version:</b><br>
 http://funguild.org<br>
-Databases:<br>
+
+<b>Databases:</b><br>
 http://stbates.org/funguild_db.php<br>
 http://stbates.org/nemaguild_db.php<br>
-Api:<br>
+
+<b>Api:</b><br>
 api url = http://www.stbates.org/guilds/services/api/<br>
 api url + query.php?qField=NAME OF DESIRED FIELD&qText=QUERY TEXT"<br>
 e.g., http://www.stbates.org/guilds/services/api/query.php?qField=taxon&qText=Tulostoma<br>
-Citation:<br>
+
+<b>Citation:</b><br>
 Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kennedy PG. 2016. FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. Fungal Ecology 20:241–248.<br> (http://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b_1.pdf)
 
 ****
 
-<b>Contributors:</b> Michelle Afkhami, Carlos Aguilar-Trigueros, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Will Cornwell, Romina Gazis, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, and Amy Zanne
+<b>Contributors:</b> Michelle Afkhami, Carlos Aguilar-Trigueros, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Will Cornwell, Romina Gazis, Rannveig Jacobsen, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, and Amy Zanne
 
 ****
 
-GENERAL NOTES
+<b>IMPORTANT: Interpretation of data</b>
+We highly recommend that users of FUNGuild read through the <a href="https://github.com/UMNFuN/FUNGuild/blob/master/FUNGuild_Manual.pdf">manual</a> and the <a href="http://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b_1.pdf">paper</a> for suggestions on interpretation of your guild data.
+
+****
+
+<b>GENERAL NOTES</b>
 
 The Guilds bioinformatic tool is a two-component system that includes online community annotated databases and a python script that assigns functional information to operational taxonomic units (OTUs) obtained from next generation sequencing of environmental samples. The script is based on an original in-house python script referenced in Branco et al. 2013. PLoS One 8:1–10 (http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0078295). It searches taxonomic strings in the user’s OTU table against the online Guilds databases (fungi or nematodes) containing taxonomic keywords and functional metadata. The output is the original OTU table with functional metadata appended, and users also have options to output an assigned OTUs only table and/or a table containing only OTUs for which assignments could not be made.
 
@@ -33,7 +41,7 @@ http://funguild.org
 An example OTU table .txt file to demonstrate formatting can be found <a href='http://www.stbates.org/guilds/download_examples.php/?download_file=otu_table_example.txt' target = '_blank'><i>here</i></a>.
 
 
-RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
+<b>RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE</b>
 
 - Make sure you local computer has Python installed. Our current version of script support Python version higher than 2.7. We recommand that you install the Anaconda Python distribution for all required dependencies (https://www.continuum.io/downloads). Python 3.6 is prefered for its better support of Unicode characters (see https://www.python.org/downloads/).
 
@@ -53,8 +61,9 @@ RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE
 
 - Hit the enter/return key on your computer, and allow a few seconds for the script to do its magic!
 
+****
 
-<a name="contributing">CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE</a>
+<b><a name="contributing">CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE</a></b>
 
 Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases (FUNGuild_db or NEMAGuild_db) by contacting the database curators (xerantheum@gmail.com or scott.thomas.bates@gmail.com), or via the online submission application (http://www.stbates.org/guilds/entry.php - for an upload .txt file formatting example, <a href='http://www.stbates.org/guilds/download_examples.php/?download_file=db_upload_example.txt' target = '_blank'><i>click here</i></a>). All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases. Taxon entries proposed for addition to the databases will be accessable once they have been reviewed by the database curators and migrated to the main database. Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
 
@@ -92,9 +101,9 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
     
     http://www.apsnet.org/publications/commonnames/Pages/default.aspx
 
+****
 
-
-<a name="troubleshooting">TROUBLESHOOTING</a>
+<b><a name="troubleshooting">TROUBLESHOOTING</a></b>
 
 <b>Formatting:</b> The python script expects a standard OTU table as input (<i><a href="http://biom-format.org/documentation/biom_conversion.html" target="_blank">click here</a></i> for converting a biom file to an otu_table.txt file in qiime), and it is critical that this is formatted correctly before running the script. A typical OTU table in the text file format will look something like this:
 
