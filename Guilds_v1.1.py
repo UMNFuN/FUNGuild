@@ -172,7 +172,7 @@ with open(otu_file, 'r') as otu:
 #Attach all columns of database file to the header of the new OTU table
 for item in funguild_header:
 	header.append(item)
-
+lookup = 'taxonomy'
 #look for Taxonomy or taxonomy
 if 'taxonomy' in header:
     lookup = 'taxonomy'
