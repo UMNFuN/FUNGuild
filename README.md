@@ -1,6 +1,6 @@
 <h1>FUNGuild: Fungi + fUNctional + Guild</h1>
 
-<b><i>Over 11,000 fungal taxa now included in the database</i>!</b>
+<b><i>Over 12,000 fungal taxa now included in the database</i>!</b>
 
 <b>Online version:</b><br>
 http://funguild.org<br>
@@ -134,6 +134,50 @@ When working with large OTU table files, consider the following:
 - Zip OTU tables of a larger file size (e.g., over 10MB) before loading them onto the server. This approach has been tested with larger files and seems to be in working order; however, processing time is slowed considerably (which shouldn't be an issue for php page time outs - see above). You can always try larger OTU table sizes (up to 50MB when zipped), but a great deal of patience may be required. This being said, it is recommended that you use a local version of the program run from the command line to run the script (see below).
 
 - Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).
+
+<b>Citing Papers</b>
+
+Asemaninejad, A, Thorn RG, Lindo Z. 2017. Vertical distribution of fungi in hollows and hummocks of boreal peatlands. Fungal Ecology 27:59-68
+
+Eisenhauer N, Antunes PM, Bennett AE, Birkhofer K, Bissett A, Bowker MA, Caruso T, Chen B, Coleman DC, de Boer W, de Ruiter P, DeLuca TH, Frati F, Griffiths BS, Hart MM, Hattenschwiler S, Haimi J, Heethoff M, Kaneko N, Kelly LC, Leinaas HP, Lindo Z, Macdonald C, Rillig MC, Ruess L, Scheu S, Schmidt O, Seastedt TR, van Straalen NM, Tiunov AV, Zimmer M, Powell JR. 2017. Priorities for research in soil ecology. Pedobiologia 63:1-7
+
+Guise S, Kostenko O, Cnossen MC, ten Hooven FC, Vres B, van der Putten WH. 2017. Seed and root endophytic fungi in a range expanding and a related plant species. Frontiers in Microbiology 8:e1645
+
+Hui N, Jumpponen A, Francini G, Kotze DJ, Liu X, Romantschuk M, Strommer R, Setala H. 2017. Soil microbial communities are shaped by vegetation type and park age in cities under cold climate: Park soil microbial communities. Environmental Microbiology 19:1281-1295
+
+Jacobsen RM, Kauserud H, Sverdrup-Thygeson A, Bjorbaekmo MM, Birkemoe T. 2017. Wood-inhabiting insects can function as targeted vectors for decomposer fungi. Fungal Ecology 29:76-84
+
+McGee CF, Byrne H, Irvine A, Wilson J. 2017. Diversity and dynamics of the DNA and cDNA-derived compost fungal communities throughout the commercial cultivation process for Agaricus bisporus. Mycologia <i>In Press</i>
+
+Nuske SJ, Vernes K, May TW, Claridge AW, Congdon BC, Krockenberger A, Abell SE. 2017. Redundancy among mammalian fungal dispersers and the importance of declining specialists. Fungal Ecology 27:1-13
+
+Oriol G, Geml J, Pérez-Haase A, Ninot JM, Semenova-Nelsen TA, Peñuelas J. 2017. Abrupt changes in the composition and function of fungal communities along an environmental gradient in the High Arctic. Molecular Ecology <i>In Press</i>
+
+Pinzari F, Maggi O, Ceci A, Reverberi M, Persiani AM. 2017. Overlap in substrate utilisation and spatial exclusion in microfungi that act as early cellulose colonisers in a Mediterranean environment. Pedobiologia 61:9-21
+
+Siddique AB, Khokon AM, Unterseher M. 2017. What do we learn from cultures in the omics age? High-throughput sequencing and cultivation of leaf- inhabiting endophytes from beech (<i>Fagus sylvatica</i> L.) revealed complementary community composition but similar correlations with local habitat conditions. MycoKeys 20:1-16
+
+Soteras F, Ibarra C, Geml J, Barrios-García MN, Domínguez LS, Nouhra ER. 2017. Mycophagy by invasive wild boar (<i>Sus scrofa</i>) facilitates dispersal of native and introduced mycorrhizal fungi in Patagonia, Argentina. Fungal Ecology 26:51-58
+
+Vannette RL, Bichier P, Philpott SM. 2017. The presence of aggressive ants is associated with fewer insect visits to and altered microbe communities in coffee flowers. Basic and Applied Ecology 20:62-74
+
+Zheng Y, Hu H-W, Guo L-D, Anderson IC, Powell JR. 2017. Dryland forest management alters fungal community composition and decouples assembly of root- and soil-associated fungal communities. Soil Biology & Biochemistry 109:14-22
+
+Barnes CJ, Maldonado C, Froslev TG, Antonelli A, Ronsted N. 2016. Unexpectedly high beta-diversity of root-associated fungal communities in the Bolivian Andes. Frontiers in Microbiology 7:e1377
+
+Fernandez CW, Nguyen NH, Stefanski A, Han Y, Hobbie SE, Montgomery RA, Reich PB, Kennedy PG. 2016. Ectomycorrhizal fungal response to warming is linked to poor host performance at the boreal-temperate ecotone. Global Change Biology 23:1598-1609
+
+Leff JW, Lynch RC, Kane NC, Fierer N. 2016. Plant domestication and the assembly of bacterial and fungal communities associated with strains of the common sunflower, <i>Helianthus annuus</i>. New Phytologist 214:412-423
+
+Liang M, Liu X, Gilbert GS, Zheng Y, Luo S, Huang F, Yu S. 2016. Adult trees cause density-dependent mortality in conspecific seedlings by regulating the frequency of pathogenic soil fungi. Ecology Letters 19:1448-1456
+
+Semenova TA, Morgado LN, Welker JM, Walker MD, Smets E, Geml J. 2016. Compositional and functional shifts in arctic fungal communities in response to experimentally increased snow depth. Soil Biology and Biochemistry 100:201-209
+
+Song Z, Kennedy PG, Lieu FJ, Schilling JS. 2016. Fungal endophytes as priority colonizers initiating wood decomposition. Functional Ecology 31:407-418
+
+Toju H, Kishida O, Katayama N, Takagi K. 2016. Networks depicting the fine-scale co-occurrences of fungi in soil horizons. PLoS ONE 11:e0165987
+
+Yang T, Sun H, Shen C, Chu H. 2016. Fungal assemblages in different habitats in an Erman’s Birch Forest. Frontiers in Microbiology 7:e1368
 
 <b>Powered by: </b>
 
