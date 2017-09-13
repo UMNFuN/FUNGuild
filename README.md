@@ -135,7 +135,7 @@ When working with large OTU table files, consider the following:
 
 - Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).
 
-<b>Citing Papers</b>
+<b>Papers Citing FunGuild</b>
 
 Asemaninejad, A, Thorn RG, Lindo Z. 2017. Vertical distribution of fungi in hollows and hummocks of boreal peatlands. Fungal Ecology 27:59-68
 
