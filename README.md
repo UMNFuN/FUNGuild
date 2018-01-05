@@ -1,6 +1,6 @@
 <h1>FUNGuild: Fungi + fUNctional + Guild</h1>
 
-<b><i>Over 12,000 fungal taxa now included in the database</i>!</b>
+<b><i>Over 13,000 fungal taxa now included in the database</i>!</b>
 
 <b>Online version:</b><br>
 http://funguild.org<br>
