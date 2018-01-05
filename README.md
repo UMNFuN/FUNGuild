@@ -19,7 +19,7 @@ Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kenned
 
 ****
 
-<b>Contributors:</b> Michelle Afkhami, Carlos Aguilar-Trigueros, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Will Cornwell, Romina Gazis, Rannveig Jacobsen, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, and Amy Zanne
+<b>Contributors:</b> Michelle Afkhami, Carlos Aguilar-Trigueros, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Will Cornwell, Fukasawa Fu, Romina Gazis, Rannveig Jacobsen, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, and Amy Zanne
 
 ****
 
