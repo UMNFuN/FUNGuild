@@ -19,7 +19,7 @@ Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kenned
 
 ****
 
-<b>Contributors:</b> Michelle Afkhami, Carlos Aguilar-Trigueros, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Will Cornwell, Fukasawa Fu, Romina Gazis, Rannveig Jacobsen, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, and Amy Zanne
+<b>Contributors:</b> Michelle Afkhami, Carlos Aguilar-Trigueros, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Will Cornwell, Fukasawa Fu, Romina Gazis, Rannveig Jacobsen, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, Nathaniel Tobey, and Amy Zanne
 
 ****
 
@@ -136,6 +136,10 @@ When working with large OTU table files, consider the following:
 - Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).
 
 <b>Papers Citing FunGuild</b>
+
+Gluck-Thaler E, Slot JC. 2018. Specialized plant biochemistry drives gene clustering in fungi. The ISME Journal 12:1694-1705
+
+Haelewaters D, Dirks AC, Kappler LA, Mitchell JK, Quijada L, Vandegrift R, Buyck B, Pfister DH. 2018. A Preliminary Checklist of Fungi at the Boston Harbor Islands. Northeastern Naturalist 25:45-76
 
 Asemaninejad, A, Thorn RG, Lindo Z. 2017. Vertical distribution of fungi in hollows and hummocks of boreal peatlands. Fungal Ecology 27:59-68
 
