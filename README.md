@@ -135,7 +135,13 @@ Common errors include the following (move down through this list as needed, more
 
 <s>- Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).</s>
 
-<b>Examples of Papers Citing FunGuild</b>
+<b>Papers Citing FunGuild</b>
+
+Attwood GT, Wakelin SA, Leahy SC, Rowe S, Clarke S, Chapman DF, Muirhead R, Jacobs JME. 2019. Applications of the soil, plant and rumen microbiomes in pastoral agriculture. Frontiers in Nutrition 6:e107. https://doi.org/10.3389/fnut.2019.00107
+
+Bai Z, Wu X, Lin J-J, Xie H-T, Yuan H-S, Liang C. 2019. Litter-, soil- and C:N-stoichiometry-associated shifts in fungal communities along a subtropical forest succession. Catena 178:350-358. https://doi.org/10.1016/j.catena.2019.03.037
+
+Benucci GMN, Bonito V, Bonito G. 2019. Fungal, bacterial, and archaeal diversity in soils beneath native and introduced plants in Fiji, South Pacific. Microbial Ecology 78:136-146. https://doi.org/10.1007/s00248-018-1266-1
 
 Birnbaum C, Hopkins AJM, Fontaine JB, Enright NJ. 2019. Soil fungal responses to experimental warming and drying in a Mediterranean shrubland. Science of the Total Environment 683:524-536. https://doi.org/10.1016/j.scitotenv.2019.05.222
 
@@ -145,35 +151,77 @@ Brinkmann N, Schneider D, Sahner J, Ballauff J, Edy N, Barus H, Irawan B, Budi S
 
 Carson CM, Jumpponen A, Blair JM, Zeglin LH. 2019. Soil fungal community changes in response to long-term fire cessation and N fertilization in tallgrass prairie. Fungal Ecology 41:45-55. https://doi.org/10.1016/j.funeco.2019.03.002
 
+Chen L, Xiang W, Wu H, Ouyang S, Lei P, Hu Y, Ge T, Ye J, Kuzyakov Y. 2019. Contrasting patterns and drivers of soil fungal communities in subtropical deciduous and evergreen broadleaved forests. Applied Microbiology and Biotechnology 103:5421-5433. https://doi.org/10.1007/s00253-019-09867-z
+
+Day NJ, Dunfield KE, Johnstone JF, Mack MC, Turetsky MR, Walker XJ, White AL, Baltzer JL. 2019. Wildfire severity reduces richness and alters composition of soil fungal communities in boreal forests of western Canada. Global Change Biology 25:2310-2324. https://doi.org/10.1111/gcb.14641
+
 Egidi E, Delgado-Baquerizo M, Plett JM, Wang J, Eldridge DJ, Bardgett RD, Maestre FT, Singh BK. 2019. A few Ascomycota taxa dominate soil fungal communities worldwide. Nature Communications 10:e2369. https://doi.org/10.1038/s41467-019-10373-z
 
 Geisen S, Briones MJI, Gan H, Behan-Pelletier VM, Friman V-P, Arjen de Groot G, Hannula SE, Lindo Z, Philippot L, Tiunovi AV, Wall DH. 2019. A methodological framework to embrace soil biodiversity. Soil Biology and Biochemistry 136:e107536. https://doi.org/10.1016/j.soilbio.2019.107536
 
 Gómez FJR, Navarro-Cerrillo RM, Pérez-de-Luque A, Oβwald W, Andrea Vannini A, Morales-Rodríguez C. 2019. Assessment of functional and structural changes of soil fungal and oomycete communities in holm oak declined dehesas through metabarcoding analysis. Scientific Reports 9:e5315. https://doi.org/10.1038/s41598-019-41804-y
 
+Grishkan I. 2019. Soil translocation at “Evolution Canyon” I (Mount Carmel, Israel) reveals the importance of microclimatic variation for structuring soil microfungal communities. Pedobiologia 75:8-14. https://doi.org/10.1016/j.pedobi.2019.04.002
+
 Hannula SE, Zhu F, Heinen R, Bezemer TM. 2019. Foliar-feeding insects acquire microbiomes from the soil rather than the host plant. Nature Communications 10:e1254. https://doi.org/10.1038/s41467-019-09284-w
+
+Koyama A, Maherali H, Antunes PM. Plant geographic origin and phylogeny as potential drivers of community structure in root-inhabiting fungi. Journal of Ecology 107:1720-1736. https://doi.org/10.1111/1365-2745.13143
 
 Li J, Delgado-Baquerizo M, Wang J-T, Hu H-W, Cai Z-J, Zhu Y-N, Singh BK. 2019. Fungal richness contributes to multifunctionality in boreal forest soil. Soil Biology and Biochemistry 136:e107526. https://doi.org/10.1016/j.soilbio.2019.107526
 
 Li PD, Jeewon R, Aruna B, Li HY, Lin FC, Wang HK. 2019. Metabarcoding reveals differences in fungal communities between unflooded versus tidal flat soil in coastal saline ecosystem. Science of The Total Environment 690:911-922. https://doi.org/10.1016/j.scitotenv.2019.06.473
 
+Liu Y, Chen X, Liu J, Liu T, Cheng J, Wei G, Lin Y. 2019. Temporal and spatial succession and dynamics of soil fungal communities in restored grassland on the Loess Plateau in China. Land Degradation and Development 30:1273-1287. https://doi.org/10.1002/ldr.3289
+
 Liu H, Khan MY, Carvalhais LC, Delgado-Baquerizo M, Yan L, Crawford M, Dennis PG, Singh B, Schenk PM. 2019. Soil amendments with ethylene precursor alleviate negative impacts of salinity on soil microbial properties and productivity. Scientific Reports 9:e6892. https://doi.org/10.1038/s41598-019-43305-4
 
 Luo L, Zhang Z, Wang P, Han Y, Jin D, Su P, Tan X, Zhang D, Muhammad-Rizwan H, Lu X, Liu Y. 2019. Variations in phyllosphere microbial community along with the development of angular leaf-spot of cucumber. AMB Express 9:e76. https://doi.org/10.1186/s13568-019-0800-y
+
+Makiola A, Dickie IA, Holdaway RJ, Wood JR, Orwin KH, Lee CK, Glare TR. 2019. Biases in the metabarcoding of plant pathogens using rust fungi as a model system. MicrobiologyOpen 8:e00780. https://doi.org/10.1002/mbo3.780
+
+Maltz MR, Chen Z, Cao J, Arogyaswamy K, Shulman H, Aronson EL. 2019. Inoculation with <i>Pisolithus tinctorius</i> may ameliorate acid rain impacts on soil microbial communities associated with <i>Pinus massoniana</i> seedlings. Fungal Ecology 40:50-61. https://doi.org/10.1016/j.funeco.2018.11.011
+
+Nagati M, Roy M, Desrochers A, Manzi S, Bergeron Y, Gardes M. 2019. Facilitation of balsam fir by trembling aspen in the boreal forest: Do ectomycorrhizal communities matter? Frontiers in Plant Science 10:e932. https://doi.org/10.3389/fpls.2019.00932
 
 Ogwu MC, Takahashi K, Dong K, Song H-K, Moroenyane I, Waldman B, Adams JM. 2019. Fungal Elevational Rapoport pattern from a High Mountain in Japan. Scientific Reports 9:e6570. https://doi.org/10.1038/s41598-019-43025-9
 
 Parladé J, Queralt M, Pera J, Bonet, JA, Castaño C, Martínez-Peña F, Piñol J, Senar MA, De Miguel AM. 2019. Temporal dynamics of soil fungal communities after partial and total clear-cutting in a managed <i>Pinus sylvestris</i> stand. Forest Ecology and Management 449:e117456. https://doi.org/10.1016/j.foreco.2019.117456
 
+Pérez-Izquierdo L, Zabal-Aguirre M, González-Martínez SC, Buée M, Verdú M, Rincón A, Goberna M. 2019. Plant intraspecific variation modulates nutrient cycling through its below ground rhizospheric microbiome. Journal of Ecology, 107:1594-1605. https://doi.org/10.1111/1365-2745.13202
+
+Phillips ML, Weber SE, Andrews LV, Aronson EL, Allen MF, Allen EB. 2019. Fungal community assembly in soils and roots under plant invasion and nitrogen deposition. Fungal Ecology 40:107-117. https://doi.org/10.1016/j.funeco.2019.01.002
+
+Reazin C, Baird R, Clark S, Jumpponen A. 2019. Chestnuts bred for blight resistance depart nursery with distinct fungal rhizobiomes. Mycorrhiza 29:313-324. https://doi.org/10.1007/s00572-019-00897-z
+
 Saitoh Y, Hirano S-I, Nagaoka T, Amano Y. 2019. Genetic survey of indigenous microbial eukaryotic communities, mainly fungi, in sedimentary rock matrices of deep terrestrial subsurface. Ecological Genetics and Genomics 12:e100042. https://doi.org/10.1016/j.egg.2019.100042
 
+Saravesi K, Markkola A, Taulavuori E, Syvänperä I, Suominen O, Suokas M, Saikkonen K, Taulavuori K. 2019. Impacts of experimental warming and northern light climate on growth and root fungal communities of Scots pine populations. Fungal Ecology 40:43-49. https://doi.org/10.1016/j.funeco.2018.12.010
+
+Schleuss P-M, Widdig M, Heintz-Buschart A, Guhr A, Martin S, Kirkman K, Spohn M. 2019. Stoichiometric controls of soil carbon and nitrogen cycling after long-term nitrogen and phosphorus addition in a mesic grassland in South Africa. Soil Biology and Biochemistry 135:294-303. https://doi.org/10.1016/j.soilbio.2019.05.018
+
+Schroeder JW, Martin JT, Angulo DF, Arias-Del Razo I, Barbosa JM, Perea R, Sebastián-González E, Dirzo R. 2019. Host plant phylogeny and abundance predict root-associated fungal community composition and diversity of mutualists and pathogens. Journal of Ecology 107:1557-1566. https://doi.org/10.1111/1365-2745.13166
+
+Schütte UME, Henning JA, Ye Y, Bowling A, Ford J, Genet H, Waldrop MP, Turetsky MR, White JR, Bever JD. 2019. Effect of permafrost thaw on plant and soil fungal community in a boreal forest: Does fungal community change mediate plant productivity response? Journal of Ecology 107:1737-1752. https://doi.org/10.1111/1365-2745.13139
+
 Seaton FM, Jones DL, Creer S, George PBL, Smart SM, Lebron I, Barrett G, Emmett BA, Robinson SM. 2019. Plant and soil communities are associated with the response of soil water repellency to environmental stress. Science of The Total Environment 687:929-938. https://doi.org/10.1016/j.scitotenv.2019.06.052
+
+Shi L, Feng W, Jing X, Zang H, Mortimer P, Zou X. 2019. Contrasting responses of soil fungal communities and soil respiration to the above- and below-ground plant C inputs in a subtropical forest. European Journal of Soil Science 70:751-764. https://doi.org/10.1111/ejss.12777
+
+Wang Z, Jiang Y, Deane DC, He F, Shu W, Liu Y. 2019. Effects of host phylogeny, habitat and spatial proximity on host specificity and diversity of pathogenic and mycorrhizal fungi in a subtropical forest. New Phytologist 223:462-474. https://doi.org/10.1111/nph.15786
+
+Wang Q, Ma M, Jiang X, Zhou B, Guan D, Cao F, Chen S, Li J. 2019. Long-term N fertilization altered 13C-labeled fungal community composition but not diversity in wheat rhizosphere of Chinese black soil. Soil Biology and Biochemistry 135:117-126. https://doi.org/10.1016/j.soilbio.2019.04.009
+
+Wang G, Schultz P, Tipton A, Zhang J, Zhang F, Bever JD. 2019. Soil microbiome mediates positive plant diversity-productivity relationships in late successional grassland species. Ecology Letters 22:1221-1232. https://doi.org/10.1111/ele.13273
+
+Weber SE, Diez JM, Andrews LV, Goulden ML, Aronson EL, Allen MF. 2019. Responses of arbuscular mycorrhizal fungi to multiple coinciding global change drivers. Fungal Ecology 40:62-71. https://doi.org/10.1016/j.funeco.2018.11.008
 
 Würth DG, Dahl MB, Trouillie M, Wilmking M, Unterseher M, Scholler M, Sørensen S, Mortensen M, Schnittler M. 2019. The needle mycobiome of <i>Picea glauca</i> – A dynamic system reflecting surrounding environment and tree phenological traits. Fungal Ecology 41:177-186. https://doi.org/10.1016/j.funeco.2019.05.006
 
 Xu YH, Brandl H, Osterwalder S, Elzinga EJ, Huang JH. 2019. Vanadium-basidiomycete fungi interaction and its impact on vanadium biogeochemistry. Environment International 130:e104891. https://10.1016/j.envint.2019.06.001
 
 Yang W, Zhang D, Cai X, Xia L, Luo Y, Cheng X, An S. 2019. Significant alterations in soil fungal communities along a chronosequence of <i>Spartina alterniflora</i> invasion in a Chinese Yellow Sea coastal wetland. Science of The Total Environment 693:e133548. https://doi.org/10.1016/j.scitotenv.2019.07.354
+
+Zhang Z-F, Cai L. 2019. Substrate and spatial variables are major determinants of fungal community in karst caves in Southwest China. Journal of Biogeography 46:1504-1518. https://doi.org/10.1111/jbi.13594
 
 Gluck-Thaler E, Slot JC. 2018. Specialized plant biochemistry drives gene clustering in fungi. The ISME Journal 12:1694-1705. https://doi.org/10.1038/s41396-018-0075-3
 
