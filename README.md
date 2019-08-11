@@ -127,25 +127,53 @@ Common errors include the following (move down through this list as needed, more
 
 - <b>Extra spaces</b>. Spaces can cause problems when a file is being read into a program, this is why they are typically replaced with an underscore in the taxonomic strings (e.g., 'Stylaria_sp.' in the above example). To correct this issue, open the OTU table in a text editor and remove space gaps (i.e., gaps that consist of more than a single space), and then clear all of the spaces (i.e., use the find/replace function to replace all spaces ' ' with an underscore '_'). <i><b>Note:</b> blank spaces in the file name can also cause problems for the FunGuild online version, so spaces in input file names should likewise be replaced by underscores (e.g., otu table.txt should be changed to otu_table.txt).</i>
 
-<b>Online version of the script:</b> <s>The online Guilds_v1.0.py application (http://www.stbates.org/guilds/app.php) calls the python code from php when the 'Begin Analysis' button is 'pushed'. This application should work well for properly formatted (see above) OTU tables of a smaller file size (e.g., less than 25MB). There is a well known issue with php page time outs for processes that take a long time (read: more than the php default of 30 seconds). The script runs quickly, typically just a few seconds, but server handling of large files (e.g., loading them through your browser) can take time. To allow time for script processes to complete, the php 'max_execution_time' has been set to 0 (i.e., no time limit). Even though removing this restriction should allow time for processes to complete, large files can cause other problems that will trip a 500 'Internal Server Error' flag.
+<b>Online version of the script:</b> <s>The online Guilds_v1.0.py application (http://www.stbates.org/guilds/app.php) calls the python code from php when the 'Begin Analysis' button is 'pushed'. This application should work well for properly formatted (see above) OTU tables of a smaller file size (e.g., less than 25MB). There is a well known issue with php page time outs for processes that take a long time (read: more than the php default of 30 seconds). The script runs quickly, typically just a few seconds, but server handling of large files (e.g., loading them through your browser) can take time. To allow time for script processes to complete, the php 'max_execution_time' has been set to 0 (i.e., no time limit). Even though removing this restriction should allow time for processes to complete, large files can cause other problems that will trip a 500 'Internal Server Error' flag.</s>
 
-When working with large OTU table files, consider the following:
+<s>When working with large OTU table files, consider the following:</s>
 
-- Zip OTU tables of a larger file size (e.g., over 10MB) before loading them onto the server. This approach has been tested with larger files and seems to be in working order; however, processing time is slowed considerably (which shouldn't be an issue for php page time outs - see above). You can always try larger OTU table sizes (up to 50MB when zipped), but a great deal of patience may be required. This being said, it is recommended that you use a local version of the program run from the command line to run the script (see below).
+<s>- Zip OTU tables of a larger file size (e.g., over 10MB) before loading them onto the server. This approach has been tested with larger files and seems to be in working order; however, processing time is slowed considerably (which shouldn't be an issue for php page time outs - see above). You can always try larger OTU table sizes (up to 50MB when zipped), but a great deal of patience may be required. This being said, it is recommended that you use a local version of the program run from the command line to run the script (see below).</s>
 
-- Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).</s>
+<s>- Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).</s>
 
 <b>Examples of Papers Citing FunGuild</b>
 
+Birnbaum C, Hopkins AJM, Fontaine JB, Enright NJ. 2019. Soil fungal responses to experimental warming and drying in a Mediterranean shrubland. Science of the Total Environment 683:524-536. https://doi.org/10.1016/j.scitotenv.2019.05.222
+
+Booth JM, Fusi M, Marasco R, Michoud G, Fodelianakis S, Merlino G, Daffonchio D. 2019. The role of fungi in heterogeneous sediment microbial networks. Scientific Reportsvolume 9:e7537. https://doi.org/10.1038/s41598-019-43980-3
+
+Brinkmann N, Schneider D, Sahner J, Ballauff J, Edy N, Barus H, Irawan B, Budi SW, Qaim M, Daniel R, Polle A. 2019. Intensive tropical land use massively shifts soil fungal communities. Scientific Reports 9:e3403. https://doi.org/10.1038/s41598-019-39829-4
+
+Carson CM, Jumpponen A, Blair JM, Zeglin LH. 2019. Soil fungal community changes in response to long-term fire cessation and N fertilization in tallgrass prairie. Fungal Ecology 41:45-55. https://doi.org/10.1016/j.funeco.2019.03.002
+
+Egidi E, Delgado-Baquerizo M, Plett JM, Wang J, Eldridge DJ, Bardgett RD, Maestre FT, Singh BK. 2019. A few Ascomycota taxa dominate soil fungal communities worldwide. Nature Communications 10:e2369. https://doi.org/10.1038/s41467-019-10373-z
+
+Geisen S, Briones MJI, Gan H, Behan-Pelletier VM, Friman V-P, Arjen de Groot G, Hannula SE, Lindo Z, Philippot L, Tiunovi AV, Wall DH. 2019. A methodological framework to embrace soil biodiversity. Soil Biology and Biochemistry 136:e107536. https://doi.org/10.1016/j.soilbio.2019.107536
+
+Gómez FJR, Navarro-Cerrillo RM, Pérez-de-Luque A, Oβwald W, Andrea Vannini A, Morales-Rodríguez C. 2019. Assessment of functional and structural changes of soil fungal and oomycete communities in holm oak declined dehesas through metabarcoding analysis. Scientific Reports 9:e5315. https://doi.org/10.1038/s41598-019-41804-y
+
 Hannula SE, Zhu F, Heinen R, Bezemer TM. 2019. Foliar-feeding insects acquire microbiomes from the soil rather than the host plant. Nature Communications 10:e1254. https://doi.org/10.1038/s41467-019-09284-w
+
+Li J, Delgado-Baquerizo M, Wang J-T, Hu H-W, Cai Z-J, Zhu Y-N, Singh BK. 2019. Fungal richness contributes to multifunctionality in boreal forest soil. Soil Biology and Biochemistry 136:e107526. https://doi.org/10.1016/j.soilbio.2019.107526
 
 Li PD, Jeewon R, Aruna B, Li HY, Lin FC, Wang HK. 2019. Metabarcoding reveals differences in fungal communities between unflooded versus tidal flat soil in coastal saline ecosystem. Science of The Total Environment 690:911-922. https://doi.org/10.1016/j.scitotenv.2019.06.473
 
+Liu H, Khan MY, Carvalhais LC, Delgado-Baquerizo M, Yan L, Crawford M, Dennis PG, Singh B, Schenk PM. 2019. Soil amendments with ethylene precursor alleviate negative impacts of salinity on soil microbial properties and productivity. Scientific Reports 9:e6892. https://doi.org/10.1038/s41598-019-43305-4
+
+Luo L, Zhang Z, Wang P, Han Y, Jin D, Su P, Tan X, Zhang D, Muhammad-Rizwan H, Lu X, Liu Y. 2019. Variations in phyllosphere microbial community along with the development of angular leaf-spot of cucumber. AMB Express 9:e76. https://doi.org/10.1186/s13568-019-0800-y
+
 Ogwu MC, Takahashi K, Dong K, Song H-K, Moroenyane I, Waldman B, Adams JM. 2019. Fungal Elevational Rapoport pattern from a High Mountain in Japan. Scientific Reports 9:e6570. https://doi.org/10.1038/s41598-019-43025-9
+
+Parladé J, Queralt M, Pera J, Bonet, JA, Castaño C, Martínez-Peña F, Piñol J, Senar MA, De Miguel AM. 2019. Temporal dynamics of soil fungal communities after partial and total clear-cutting in a managed <i>Pinus sylvestris</i> stand. Forest Ecology and Management 449:e117456. https://doi.org/10.1016/j.foreco.2019.117456
+
+Saitoh Y, Hirano S-I, Nagaoka T, Amano Y. 2019. Genetic survey of indigenous microbial eukaryotic communities, mainly fungi, in sedimentary rock matrices of deep terrestrial subsurface. Ecological Genetics and Genomics 12:e100042. https://doi.org/10.1016/j.egg.2019.100042
 
 Seaton FM, Jones DL, Creer S, George PBL, Smart SM, Lebron I, Barrett G, Emmett BA, Robinson SM. 2019. Plant and soil communities are associated with the response of soil water repellency to environmental stress. Science of The Total Environment 687:929-938. https://doi.org/10.1016/j.scitotenv.2019.06.052
 
-Yang W, Zhang D, Cai X, Xia L, Luo Y, Cheng X, An S. 2019. Significant alterations in soil fungal communities along a chronosequence of Spartina alterniflora invasion in a Chinese Yellow Sea coastal wetland. Science of The Total Environment 693:e133548. https://doi.org/10.1016/j.scitotenv.2019.07.354
+Würth DG, Dahl MB, Trouillie M, Wilmking M, Unterseher M, Scholler M, Sørensen S, Mortensen M, Schnittler M. 2019. The needle mycobiome of <i>Picea glauca</i> – A dynamic system reflecting surrounding environment and tree phenological traits. Fungal Ecology 41:177-186. https://doi.org/10.1016/j.funeco.2019.05.006
+
+Xu YH, Brandl H, Osterwalder S, Elzinga EJ, Huang JH. 2019. Vanadium-basidiomycete fungi interaction and its impact on vanadium biogeochemistry. Environment International 130:e104891. https://10.1016/j.envint.2019.06.001
+
+Yang W, Zhang D, Cai X, Xia L, Luo Y, Cheng X, An S. 2019. Significant alterations in soil fungal communities along a chronosequence of <i>Spartina alterniflora</i> invasion in a Chinese Yellow Sea coastal wetland. Science of The Total Environment 693:e133548. https://doi.org/10.1016/j.scitotenv.2019.07.354
 
 Gluck-Thaler E, Slot JC. 2018. Specialized plant biochemistry drives gene clustering in fungi. The ISME Journal 12:1694-1705. https://doi.org/10.1038/s41396-018-0075-3
 
