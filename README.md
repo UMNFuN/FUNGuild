@@ -15,7 +15,7 @@ api url + query.php?qField=NAME OF DESIRED FIELD&qText=QUERY TEXT"<br>
 e.g., http://www.stbates.org/guilds/services/api/query.php?qField=taxon&qText=Tulostoma<br>
 
 <b>Citation:</b><br>
-Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kennedy PG. 2016. FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. Fungal Ecology 20:241–248.<br> (http://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b_1.pdf)
+Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kennedy PG. 2016. FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. Fungal Ecology 20:241–248.<br> (https://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b.pdf)
 
 ****
 
@@ -24,7 +24,7 @@ Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kenned
 ****
 
 <b>IMPORTANT: Interpretation of data</b>
-We highly recommend that users of FUNGuild read through the <a href="https://github.com/UMNFuN/FUNGuild/blob/master/FUNGuild_Manual.pdf">manual</a> and the <a href="http://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b_1.pdf">paper</a> for suggestions on interpretation of your guild data.
+We highly recommend that users of FUNGuild read through the <a href="https://github.com/UMNFuN/FUNGuild/blob/master/FUNGuild_Manual.pdf">manual</a> and the <a href="https://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b.pdf">paper</a> for suggestions on interpretation of your guild data.
 
 ****
 
@@ -43,7 +43,7 @@ An example OTU table .txt file to demonstrate formatting can be found <a href='h
 
 <b>RUNNING THE SCRIPT LOCALLY FROM THE COMMAND LINE</b>
 
-- Make sure you local computer has Python installed. Our current version of script support Python version higher than 2.7. We recommand that you install the Anaconda Python distribution for all required dependencies (https://www.continuum.io/downloads). Python 3.6 is prefered for its better support of Unicode characters (see https://www.python.org/downloads/).
+- Make sure you local computer has Python installed. Our current version of script support Python version higher than 2.7. We recommand that you install the Anaconda Python distribution for all required dependencies (https://www.anaconda.com/distribution/). Python 3.6 is prefered for its better support of Unicode characters (see https://www.python.org/downloads/).
 
 - We use the Python package 'requests' for connecting with the FUNGuild database. This package should come with most of the common Python distributions. If you somehow don't have this package in your Python (i.e. you get this error: ImportError: No module named requests), you can install it using: pip install requests
 
@@ -65,7 +65,7 @@ An example OTU table .txt file to demonstrate formatting can be found <a href='h
 
 <b><a name="contributing">CONTRIBUTING GUILD INFORMATION TO THE FUNGUILD DATABASE</a></b>
 
-Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases (FUNGuild_db or NEMAGuild_db) by contacting the database curators (xerantheum@gmail.com or scott.thomas.bates@gmail.com), or via the online submission application (http://www.stbates.org/guilds/entry.php - for an upload .txt file formatting example, <a href='http://www.stbates.org/guilds/download_examples.php/?download_file=db_upload_example.txt' target = '_blank'><i>click here</i></a>). All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases. Taxon entries proposed for addition to the databases will be accessable once they have been reviewed by the database curators and migrated to the main database. Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
+Data pertaining to particular fungal or nematode taxa can be submitted to the Guilds databases (FUNGuild_db or NEMAGuild_db) by contacting the database curators (xerantheum@gmail.com or scott.thomas.bates@gmail.com). All submitted entries will be reviewed by the database curators prior to being migrated to the main Guilds databases. Taxon entries proposed for addition to the databases will be accessable once they have been reviewed by the database curators and migrated to the main database. Once migrated, proposed entries will automatically be available to all using the Guilds bioinformatic tool to make annotated assignments to their OTU tables containing fungal or nematode taxa.
 
 <b>Information should be entered into each Guilds database field, in sequence, as follows:</b>
 
@@ -97,7 +97,7 @@ Data pertaining to particular fungal or nematode taxa can be submitted to the Gu
     
     Tedersoo L, May TW, Smith ME. 2010. Mycorrhiza 20:217-263
     
-    Outline of Ascomycota (http://www.fieldmuseum.org/myconet)
+    Outline of Ascomycota (https://www.fieldmuseum.org/sites/default/files/Myconet_13a.pdf)
     
     http://www.apsnet.org/publications/commonnames/Pages/default.aspx
 
@@ -127,15 +127,15 @@ Common errors include the following (move down through this list as needed, more
 
 - <b>Extra spaces</b>. Spaces can cause problems when a file is being read into a program, this is why they are typically replaced with an underscore in the taxonomic strings (e.g., 'Stylaria_sp.' in the above example). To correct this issue, open the OTU table in a text editor and remove space gaps (i.e., gaps that consist of more than a single space), and then clear all of the spaces (i.e., use the find/replace function to replace all spaces ' ' with an underscore '_'). <i><b>Note:</b> blank spaces in the file name can also cause problems for the FunGuild online version, so spaces in input file names should likewise be replaced by underscores (e.g., otu table.txt should be changed to otu_table.txt).</i>
 
-<b>Online version of the script:</b> The online Guilds_v1.0.py application (http://www.stbates.org/guilds/app.php) calls the python code from php when the 'Begin Analysis' button is 'pushed'. This application should work well for properly formatted (see above) OTU tables of a smaller file size (e.g., less than 25MB). There is a well known issue with php page time outs for processes that take a long time (read: more than the php default of 30 seconds). The script runs quickly, typically just a few seconds, but server handling of large files (e.g., loading them through your browser) can take time. To allow time for script processes to complete, the php 'max_execution_time' has been set to 0 (i.e., no time limit). Even though removing this restriction should allow time for processes to complete, large files can cause other problems that will trip a 500 'Internal Server Error' flag.
+<b>Online version of the script:</b> <s>The online Guilds_v1.0.py application (http://www.stbates.org/guilds/app.php) calls the python code from php when the 'Begin Analysis' button is 'pushed'. This application should work well for properly formatted (see above) OTU tables of a smaller file size (e.g., less than 25MB). There is a well known issue with php page time outs for processes that take a long time (read: more than the php default of 30 seconds). The script runs quickly, typically just a few seconds, but server handling of large files (e.g., loading them through your browser) can take time. To allow time for script processes to complete, the php 'max_execution_time' has been set to 0 (i.e., no time limit). Even though removing this restriction should allow time for processes to complete, large files can cause other problems that will trip a 500 'Internal Server Error' flag.
 
 When working with large OTU table files, consider the following:
 
 - Zip OTU tables of a larger file size (e.g., over 10MB) before loading them onto the server. This approach has been tested with larger files and seems to be in working order; however, processing time is slowed considerably (which shouldn't be an issue for php page time outs - see above). You can always try larger OTU table sizes (up to 50MB when zipped), but a great deal of patience may be required. This being said, it is recommended that you use a local version of the program run from the command line to run the script (see below).
 
-- Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).
+- Run the script locally. Running the script from your local computer via command line (see above) will eliminate server related issues, remove the need to zip the file, and should speed up processing times (files of 25MB or more will typically run in several seconds).</s>
 
-<b>Papers Citing FunGuild</b>
+<b>Examples of Papers Citing FunGuild</b>
 
 Gluck-Thaler E, Slot JC. 2018. Specialized plant biochemistry drives gene clustering in fungi. The ISME Journal 12:1694-1705
 
@@ -182,6 +182,8 @@ Song Z, Kennedy PG, Lieu FJ, Schilling JS. 2016. Fungal endophytes as priority c
 Toju H, Kishida O, Katayama N, Takagi K. 2016. Networks depicting the fine-scale co-occurrences of fungi in soil horizons. PLoS ONE 11:e0165987
 
 Yang T, Sun H, Shen C, Chu H. 2016. Fungal assemblages in different habitats in an Erman’s Birch Forest. Frontiers in Microbiology 7:e1368
+
+Yang W, Zhang D, Cai X, Xia L, Luo Y, Cheng X, An S. 2019. Significant alterations in soil fungal communities along a chronosequence of Spartina alterniflora invasion in a Chinese Yellow Sea coastal wetland. Science of The Total Environment 693:e133548. https://doi.org/10.1016/j.scitotenv.2019.07.354
 
 <b>Powered by: </b>
 
