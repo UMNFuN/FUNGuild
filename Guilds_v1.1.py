@@ -293,7 +293,7 @@ if args.matched:
     for item in unique_list:
         item[-1] = item[-1].encode('utf-8')
         rec = '\t'.join([str(i) for i in item])
-        output.write('%s' % rec)
+        output.write('%s\n' % rec)
     output.close()
 
 #Output unmatched OTUs to a new file
