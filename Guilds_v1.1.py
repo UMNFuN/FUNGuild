@@ -108,7 +108,7 @@ else:
 ###########################################################################################
 
 # Import Function Database from GitHub, and get it ready.##################################
-print("FunGuild v1.0 Beta")
+print("FunGuild v1.1 Beta")
 
 database_name = args.db
 if database_name == 'fungi':
