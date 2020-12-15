@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
 Copyright (C) 2014-2015 Zewei Song
@@ -111,7 +112,7 @@ print("FunGuild v1.0 Beta")
 
 database_name = args.db
 if database_name == 'fungi':
-    url = 'http://www.stbates.org/funguild_db.php'
+    url = 'http://www.stbates.org/funguild_db_2.php'
 elif database_name == 'nematode':
     url = 'http://www.stbates.org/nemaguild_db.php'
 
@@ -120,12 +121,15 @@ import json
 
 print('Connecting with FUNGuild database ...')
 db_url = requests.get(url)
-db_url = db_url.content.decode('utf-8').split('\n')[6].strip('[').strip(']</body>').replace('} , {', '} \n {').split('\n')
-
+#db_url = db_url.content.decode('utf-8').split('\n')[6].strip('[').strip(']</body>').replace('} , {', '} \n {').split('\n')
+db_url = db_url.content.decode('utf-8')
+db_url = db_url.split('\n')[6].strip('</body>')
+db_url = json.loads(db_url)
 db = []
 # For all species key works (replace space with underscore)
 for record in db_url:
-    current_record = json.loads(record)
+    # current_record = json.loads(record)
+    current_record = record
     if current_record['taxonomicLevel'] == 20: # If species level
         current_record['taxon'] = current_record['taxon'].replace(' ', '_')
     try:
