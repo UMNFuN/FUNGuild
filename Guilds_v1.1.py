@@ -90,7 +90,7 @@ args = parser.parse_args()
 otu_file = args.otu
 
 #Detect delimiter in the input file
-with open(otu_file, 'rU') as f1:
+with open(otu_file, 'r') as f1:
     dialect = csv.Sniffer().sniff(f1.read())
     otu_delimiter = dialect.delimiter
 
