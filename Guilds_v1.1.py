@@ -291,13 +291,13 @@ if args.matched:
         os.remove(matched_file)
     output = open(matched_file,'a')
 	#Write the matched list header
-    output.write('%s' % ('\t'.join(header))) #Header
+    output.write('%s\n' % ('\t'.join(header))) #Header
 
 	#Write the matched OTU table
     for item in unique_list:
         item[-1] = item[-1].encode('utf-8')
         rec = '\t'.join([str(i) for i in item])
-        output.write('%s' % rec)
+        output.write('%s\n' % rec)
     output.close()
 
 #Output unmatched OTUs to a new file
@@ -324,7 +324,7 @@ if args.unmatched:
 	if os.path.isfile(unmatched_file) == True:
 		os.remove(unmatched_file)
 	output_unmatched = open(unmatched_file, 'a')
-	output_unmatched.write('%s' % ('\t'.join(header)))
+	output_unmatched.write('%s\n' % ('\t'.join(header)))
 	for item in unmatched_list:
 		rec = '\t'.join(item)
 		output_unmatched.write('%s\n' % rec)
