@@ -1,0 +1,11 @@
+OTU ID	sample1	sample2	sample3	sample4	sample5	taxonomy
+OTU_100	0	1	0	0	0	93.6%|Laetisaria_fuciformis|EU118639|SH012042.06FU|reps_singleton|k__Fungi;p__Basidiomycota;c__Agaricomycetes;o__Corticiales;f__Corticiaceae;g__Laetisaria;s__Laetisaria_fuciformis
+OTU_1002	95	127	183	10	121	100%|Leptodontidium_sp|FJ552955|SH209316.06FU|refs|k__Fungi;p__Ascomycota;c__Leotiomycetes;o__Helotiales;f__Incertae_sedis;g__Leptodontidium;s__Leptodontidium_sp
+OTU_1003	1	0	1	0	0	79.31%|uncultured_fungus|KC966088|SH441311.06FU|reps_singleton|k__Fungi;p__unidentified;c__unidentified;o__unidentified;f__unidentified;g__unidentified;s__uncultured_fungus
+OTU_1008	9	3	0	0	1	97.09%|Helotiaceae_sp|FJ475546|SH195739.06FU|reps|k__Fungi;p__Ascomycota;c__Leotiomycetes;o__Helotiales;f__Helotiaceae;g__unidentified;s__Helotiaceae_sp
+OTU_1011	2	12	18	0	12	81.96%|Entrophospora_sp_JJ38|AY035644|SH431532.06FU|reps_singleton|k__Fungi;p__Glomeromycota;c__Glomeromycetes;o__Diversisporales;f__Acaulosporaceae;g__Entrophospora;s__Entrophospora_sp_JJ38
+OTU_1015	29	9	0	0	8	100%|uncultured_fungus|KC965399|SH451013.06FU|reps_singleton|k__Fungi;p__unidentified;c__unidentified;o__unidentified;f__unidentified;g__unidentified;s__uncultured_fungus
+OTU_1018	0	0	2	0	0	96.97%|uncultured_Ascomycota|FN562038|SH449221.06FU|reps_singleton|k__Fungi;p__Ascomycota;c__unidentified;o__unidentified;f__unidentified;g__unidentified;s__uncultured_Ascomycota
+OTU_1021	1	0	28	289	267	100%|Massarina_sp_JP_2013|JX981477|SH018317.06FU|reps_singleton|k__Fungi;p__Ascomycota;c__Dothideomycetes;o__Pleosporales;f__Massarinaceae;g__Massarina;s__Massarina_sp_JP_2013
+OTU_1023	0	0	3	0	0	100%|Scleroderma_areolatum|EU784408|SH434269.06FU|reps_singleton|k__Fungi;p__Basidiomycota;c__Agaricomycetes;o__Boletales;f__Sclerodermataceae;g__Scleroderma;s__Scleroderma_areolatum
+OTU_1024	1	1	0	0	0	100%|Derxomyces_sp_LTD_2009a|AB508840|SH457761.06FU|reps_singleton|k__Fungi;p__Basidiomycota;c__Tremellomycetes;o__Tremellales;f__Incertae_sedis;g__Derxomyces;s__Derxomyces_sp_LTD_2009a
