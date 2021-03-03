@@ -130,6 +130,8 @@ db = []
 for record in db_url:
     # current_record = json.loads(record)
     current_record = record
+    # needs to be int for sorting later
+    current_record['taxonomicLevel'] = int(current_record['taxonomicLevel'])
     if current_record['taxonomicLevel'] == 20: # If species level
         current_record['taxon'] = current_record['taxon'].replace(' ', '_')
     try:
@@ -187,6 +189,7 @@ elif 'Taxonomy' in header:
 #print(header)
 index_tax = header.index(lookup)
 index_notes = header.index('Notes')
+index_level = header.index('Taxon Level')
 
 #Abort if the column 'taxonomy' is not found
 if index_tax == -1:
@@ -254,7 +257,7 @@ print("Dereplicating and sorting the result...")
 #Dereplicate and write to output file##########################################################
 #Sort by OTU names and Level. Level is sorted from species to kingdom.
 otu_sort = otu_redundant[:]
-otu_sort.sort(key = itemgetter(index_tax), reverse = True) # Sort the redundant OTU table by Taxonomic Level.
+otu_sort.sort(key = itemgetter(index_level), reverse = True) # Sort the redundant OTU table by Taxonomic Level.
 otu_sort.sort(key = itemgetter(0)) # Sort the redundant OTU table by OTU ID.
 
 #Dereplicate the OTU table, unique OTU ID with lowest taxonomic level will be kept.
