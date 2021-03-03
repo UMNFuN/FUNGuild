@@ -2,6 +2,15 @@
 
 <b><i>Over 13,000 fungal taxa now included in the database</i>!</b>
 
+<h3>Quick start</h3>
+
+The FUNGuild.py script was written under Python 3 environment. If you don't have a Python 3 environment, we recommend to install Anaconda (https://www.anaconda.com/products/individual).
+
+    git clone https://github.com/UMNFuN/FUNGuild
+    cd FUNGuild/
+    python FUNGuild.py taxa -otu example/otu_table.txt -format tsv -column taxonomy -classifier unite
+    python FUNGuild.py guild -taxa example/otu_table.taxa.txt
+
 <b>Online version:</b><br>
 http://funguild.org<br>
 
