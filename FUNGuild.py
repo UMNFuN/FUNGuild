@@ -122,6 +122,8 @@ def taxa_parser(otu, fmt, column, classifier):
             taxa_string = [i.split('(')[0] for i in taxa_string] # Remove confidnet value
         else:
             pass
+        if len(taxa_string) < 7: # check if there are missing taxonomic levels
+            taxa_string = taxa_string + ['na'] * (7 - len(taxa_string))
         taxa_otu.append(current_otu)
         taxa_level.append(taxa_string)
         taxa_dict[record[0]] = {}

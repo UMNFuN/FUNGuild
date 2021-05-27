@@ -2,19 +2,6 @@
 
 <b><i>Over 13,000 fungal taxa now included in the database</i>!</b>
 
-<h3>Quick start</h3>
-
-The FUNGuild.py script was written under Python 3 environment. If you don't have a Python 3 environment, we recommend to install Anaconda (https://www.anaconda.com/products/individual).
-
-FUNGuild now takes two steps (parsers) for the functions of fungi. First we implemented a taxa parser to extract taxonomic information from the user provided OTU table. Then we use a guild parser to query the FUNGuild database. In this way, we can avoid most of the format issues we encountered when dealing with the original OTU table. You can also complie your own taxa file as the input for the guild parser.
-
-Use -h or --help for a detail manual of FUNGuild.
-
-    git clone https://github.com/UMNFuN/FUNGuild
-    cd FUNGuild/
-    python FUNGuild.py taxa -otu example/otu_table.txt -format tsv -column taxonomy -classifier unite
-    python FUNGuild.py guild -taxa example/otu_table.taxa.txt
-
 <b>Online version:</b><br>
 http://funguild.org<br>
 
