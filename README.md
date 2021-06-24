@@ -23,9 +23,9 @@ http://stbates.org/funguild_db.php<br>
 http://stbates.org/nemaguild_db.php<br>
 
 <b>Api:</b><br>
-api url = http://www.stbates.org/guilds/services/api/<br>
-api url + query.php?qField=NAME OF DESIRED FIELD&qText=QUERY TEXT"<br>
-e.g., http://www.stbates.org/guilds/services/api/query.php?qField=taxon&qText=Tulostoma<br>
+api url = http://www.mycoportal.org/fdex/services/api/<br>
+api url + db_return.php?qField=NAME OF DESIRED FIELD&qText=QUERY TEXT"<br>
+e.g., http://www.mycoportal.org/fdex/services/api/db_return.php?qField=taxon&qText=Tulostoma<br>
 
 <b>Citation:</b><br>
 Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kennedy PG. 2016. FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. Fungal Ecology 20:241–248.<br> (https://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b.pdf)
