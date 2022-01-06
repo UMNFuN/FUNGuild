@@ -23,16 +23,16 @@ http://stbates.org/funguild_db.php<br>
 http://stbates.org/nemaguild_db.php<br>
 
 <b>Api:</b><br>
-api url = http://www.stbates.org/guilds/services/api/<br>
-api url + query.php?qField=NAME OF DESIRED FIELD&qText=QUERY TEXT"<br>
-e.g., http://www.stbates.org/guilds/services/api/query.php?qField=taxon&qText=Tulostoma<br>
+api url = https://mycoportal.org/funguild/services/api/<br>
+api url + db_return.php?qDB=NAME OF DESIRED DATABASE&qField=NAME OF DESIRED FIELD&qText=QUERY TEXT"<br>
+e.g., https://mycoportal.org/funguild/services/api/db_return.php?qDB=funguild_db&qField=taxon&qText=Tulostoma<br>
 
 <b>Citation:</b><br>
 Nguyen NH, Song Z, Bates ST, Branco S, Tedersoo L, Menke J, Schilling JS, Kennedy PG. 2016. FUNGuild: An open annotation tool for parsing fungal community datasets by ecological guild. Fungal Ecology 20:241–248.<br> (https://cbs.umn.edu/sites/cbs.umn.edu/files/public/downloads/Nguyenetal2015b.pdf)
 
 ****
 
-<b>Contributors:</b> Michelle Afkhami, Carlos Aguilar-Trigueros, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Will Cornwell, Fukasawa Fu, Romina Gazis, Rannveig Jacobsen, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, Nathaniel Tobey, and Amy Zanne
+<b>Contributors:</b> Michelle Afkhami, Carlos Aguilar-Trigueros, Scott T. Bates, Sarah Branco, Posy Busby, Natalie Christian, Will Cornwell, Zachary Foster, Fukasawa Fu, Romina Gazis, Rannveig Jacobsen, Peter Kennedy, Daniel Lindner, Jon Menke, Amy Milo, Nhu Nguyen, Henrik Nilsson, Jonathan Reich, Jonathan Schilling, Zewei Song, Jennifer Talbot, Leho Tedersoo, Nathaniel Tobey, Will VanHook, and Amy Zanne
 
 ****
 
