@@ -145,7 +145,7 @@ def taxa_parser(otu, fmt, column, classifier):
 
 def guild_parser(taxa):
     taxa_input = taxa
-    url = 'https://mycoportal.org/fdex/services/api/db_return.php?dbReturn=Yes'
+    url = 'https://www.mycoportal.org/fdex/services/api/db_return.php?dbReturn=Yes'
     # Output file name
     dot_position = [i for i in range(len(taxa_input)) if taxa_input.startswith('.', i)] #Get the position of . in the input filename
     if not dot_position: #the file does not have extension
