@@ -73,8 +73,20 @@ import sys
 from operator import itemgetter
 import csv
 
+import requests
+import json
+
 start = timeit.default_timer()
-################################
+
+#---- some globals
+
+# knows database names and assoicated "file names" 
+known_dbs= {'fungi': 'funguild_db_2.php', 
+            'nematode': 'nemaguild_db.php',
+           }
+# default local databse directory, may be superseeded by FUNGUILD_DB environnement variable
+DB_DIR=os.environ.get('FUNGUILD_DB', os.path.abspath(os.path.join(os.path.dirname(__file__), 'FUNGuild_db')))
+
 
 #Command line parameters#####################################################################
 parser = argparse.ArgumentParser()
@@ -83,12 +95,38 @@ parser.add_argument("-otu", help="Path and file name of the OTU table. The scrip
 					"in the file, but tab or csv are preferred formats.")
 parser.add_argument("-m", "--matched", action="store_true", help="Ask the script to output a otu table with function assigned OTUs")
 parser.add_argument("-u", "--unmatched", action="store_true", help="Ask the script to output a otu table with function assigned OTUs")
-parser.add_argument("-db", choices=['fungi','nematode'], default='fungi', help="Assign a specified database to the script")
+#parser.add_argument("-db", choices=['fungi','nematode'], default='fungi', help="Assign a specified database to the script")
+parser.add_argument("-db", choices=list(known_dbs.keys()), default='fungi', help="Assign a specified database to the script")
+parser.add_argument("-l", "--local", action="store_true", help="read database from local file (default: False)")
+parser.add_argument("-d", "--download", action="store_true", help="download databases to %s directory. (default: False)" %(DB_DIR))
 args = parser.parse_args()
+
 
 #input files
 otu_file = args.otu
+#where to grab the databases
+URL='file://%s' %(DB_DIR) if args.local else 'http://www.stbates.org'
 
+#--- download DBs to local file for later usage in non network context
+#    must be run from a node with internet connection
+if args.download:
+    print('Download DBs to', DB_DIR) 
+    if not os.path.isdir(DB_DIR):
+        os.makedirs(DB_DIR)
+    for db in known_dbs:
+        print ("downloading", URL+'/'+known_dbs[db], end='')
+        try:
+            response = requests.get(URL+'/'+known_dbs[db])
+        except ConnectionError as msg:
+            print("Error:", msg, file=sys.stderr)
+        try:
+           open(os.path.join(DB_DIR,known_dbs[db]), "wb").write(response.content)
+        except OSError as msg:
+           print("Error:", msg, file=sys.stderr)
+        print('\t', 'OK')
+    sys.exit(0)
+
+	
 #Detect delimiter in the input file
 with open(otu_file, 'r') as f1:
     dialect = csv.Sniffer().sniff(f1.read())
@@ -111,17 +149,20 @@ else:
 print("FunGuild v1.1 Beta")
 
 database_name = args.db
-if database_name == 'fungi':
-    url = 'http://www.stbates.org/funguild_db_2.php'
-elif database_name == 'nematode':
-    url = 'http://www.stbates.org/nemaguild_db.php'
 
-import requests
-import json
+#---- no need to check for database_name already checked by argparse 
+url = URL + '/' + known_dbs[database_name]
 
-print('Connecting with FUNGuild database ...')
-db_url = requests.get(url)
-#db_url = db_url.content.decode('utf-8').split('\n')[6].strip('[').strip(']</body>').replace('} , {', '} \n {').split('\n')
+
+print('Connecting with FUNGuild database ...', url)
+if args.local:
+    from requests_file import FileAdapter
+    s = requests.Session()
+    s.mount('file://', FileAdapter())
+    db_url = s.get(url)
+else:
+    db_url = requests.get(url)
+
 db_url = db_url.content.decode('utf-8')
 db_url = db_url.split('\n')[6].strip('</body>')
 db_url = json.loads(db_url)
